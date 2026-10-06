@@ -1,13 +1,13 @@
 import pandas as pd
+import numpy as np
+
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import StratifiedGroupKFold
 from sklearn.metrics import (
     roc_auc_score,
     f1_score,
-    matthews_corrcoef,
-    classification_report,
-    confusion_matrix
+    matthews_corrcoef
 )
-from sklearn.model_selection import StratifiedGroupKFold
 
 
 # --------------------------------------------------
@@ -20,6 +20,7 @@ df = pd.read_csv(INPUT_FILE)
 
 print("Dataset loaded successfully.")
 print(f"Number of methods: {len(df)}")
+print(f"Number of files: {df['File'].nunique()}")
 
 
 # --------------------------------------------------
@@ -43,173 +44,242 @@ AST_FEATURES = [
 X = df[AST_FEATURES]
 y = df["Defective"]
 
+# Group = Java file
 groups = df["File"]
 
 
 # --------------------------------------------------
-# 3. Create leakage-safe train/test split
+# 3. Display dataset information
 # --------------------------------------------------
 
-splitter = StratifiedGroupKFold(
-    n_splits=5,
+print("\n----------------------------------------")
+print("DATASET INFORMATION")
+print("----------------------------------------")
+
+print(f"Methods: {len(df)}")
+print(f"Files:   {df['File'].nunique()}")
+
+print("\nOverall class distribution:")
+print(y.value_counts())
+
+print("\nOverall class percentages:")
+print(y.value_counts(normalize=True) * 100)
+
+
+# --------------------------------------------------
+# 4. Create file-level cross-validation
+# --------------------------------------------------
+
+N_SPLITS = 5
+
+cv = StratifiedGroupKFold(
+    n_splits=N_SPLITS,
     shuffle=True,
     random_state=42
 )
 
-selected_split = None
 
-for train_indices, test_indices in splitter.split(
-        X, y, groups=groups):
+# --------------------------------------------------
+# 5. Store results
+# --------------------------------------------------
 
-    y_train_candidate = y.iloc[train_indices]
-    y_test_candidate = y.iloc[test_indices]
-
-    if (
-        y_train_candidate.nunique() == 2
-        and y_test_candidate.nunique() == 2
-    ):
-        selected_split = (train_indices, test_indices)
-        break
+auc_scores = []
+f1_scores = []
+mcc_scores = []
 
 
-if selected_split is None:
-    raise ValueError(
-        "Could not find a valid train/test split "
-        "containing both classes."
+# --------------------------------------------------
+# 6. Cross-validation
+# --------------------------------------------------
+
+print("\n========================================")
+print("FILE-LEVEL CROSS-VALIDATION")
+print("========================================")
+
+
+for fold, (train_indices, test_indices) in enumerate(
+        cv.split(X, y, groups=groups), start=1):
+
+    X_train = X.iloc[train_indices]
+    X_test = X.iloc[test_indices]
+
+    y_train = y.iloc[train_indices]
+    y_test = y.iloc[test_indices]
+
+    train_files = set(
+        df.iloc[train_indices]["File"]
+    )
+
+    test_files = set(
+        df.iloc[test_indices]["File"]
+    )
+
+    overlap = train_files.intersection(test_files)
+
+
+    print(f"\n----------------------------------------")
+    print(f"FOLD {fold}")
+    print(f"----------------------------------------")
+
+    print(f"Training methods: {len(X_train)}")
+    print(f"Testing methods:  {len(X_test)}")
+
+    print(f"Training files: {len(train_files)}")
+    print(f"Testing files:  {len(test_files)}")
+
+    print("\nTraining class distribution:")
+    print(y_train.value_counts().to_dict())
+
+    print("\nTesting class distribution:")
+    print(y_test.value_counts().to_dict())
+
+
+    # --------------------------------------------------
+    # Leakage check
+    # --------------------------------------------------
+
+    if len(overlap) == 0:
+        print("\nLeakage check: PASS")
+    else:
+        print("\nLeakage check: FAIL")
+        print("Overlapping files:", overlap)
+
+
+    # --------------------------------------------------
+    # Check whether both classes exist
+    # --------------------------------------------------
+
+    if y_train.nunique() < 2:
+        print("Skipping fold: training set contains only one class.")
+        continue
+
+    if y_test.nunique() < 2:
+        print("Skipping fold: testing set contains only one class.")
+        continue
+
+
+    # --------------------------------------------------
+    # Create Random Forest
+    # --------------------------------------------------
+
+    model = RandomForestClassifier(
+        n_estimators=100,
+        random_state=42,
+        class_weight="balanced"
     )
 
 
-train_indices, test_indices = selected_split
+    # --------------------------------------------------
+    # Train
+    # --------------------------------------------------
+
+    model.fit(X_train, y_train)
 
 
-X_train = X.iloc[train_indices]
-X_test = X.iloc[test_indices]
+    # --------------------------------------------------
+    # Predictions
+    # --------------------------------------------------
 
-y_train = y.iloc[train_indices]
-y_test = y.iloc[test_indices]
+    y_pred = model.predict(X_test)
 
-
-# --------------------------------------------------
-# 4. Display split information
-# --------------------------------------------------
-
-print("\n----------------------------------------")
-print("TRAIN / TEST DATA")
-print("----------------------------------------")
-
-print(f"Training methods: {len(X_train)}")
-print(f"Testing methods:  {len(X_test)}")
-
-print("\nTraining class distribution:")
-print(y_train.value_counts())
-
-print("\nTesting class distribution:")
-print(y_test.value_counts())
+    y_prob = model.predict_proba(X_test)[:, 1]
 
 
-# --------------------------------------------------
-# 5. Create Random Forest model
-# --------------------------------------------------
+    # --------------------------------------------------
+    # Evaluation
+    # --------------------------------------------------
 
-model = RandomForestClassifier(
-    n_estimators=100,
-    random_state=42,
-    class_weight="balanced"
-)
+    auc = roc_auc_score(
+        y_test,
+        y_prob
+    )
 
-
-# --------------------------------------------------
-# 6. Train model
-# --------------------------------------------------
-
-print("\n----------------------------------------")
-print("TRAINING RANDOM FOREST")
-print("----------------------------------------")
-
-model.fit(X_train, y_train)
-
-print("Random Forest training complete.")
-
-
-# --------------------------------------------------
-# 7. Make predictions
-# --------------------------------------------------
-
-y_pred = model.predict(X_test)
-
-# Probability of the defective class
-y_prob = model.predict_proba(X_test)[:, 1]
-
-
-# --------------------------------------------------
-# 8. Evaluate model
-# --------------------------------------------------
-
-auc = roc_auc_score(y_test, y_prob)
-
-f1 = f1_score(
-    y_test,
-    y_pred,
-    zero_division=0
-)
-
-mcc = matthews_corrcoef(
-    y_test,
-    y_pred
-)
-
-
-# --------------------------------------------------
-# 9. Display results
-# --------------------------------------------------
-
-print("\n----------------------------------------")
-print("RANDOM FOREST RESULTS")
-print("----------------------------------------")
-
-print(f"ROC-AUC: {auc:.4f}")
-print(f"F1 Score: {f1:.4f}")
-print(f"MCC:      {mcc:.4f}")
-
-
-# --------------------------------------------------
-# 10. Confusion matrix
-# --------------------------------------------------
-
-print("\nConfusion Matrix:")
-print(confusion_matrix(y_test, y_pred))
-
-
-# --------------------------------------------------
-# 11. Classification report
-# --------------------------------------------------
-
-print("\nClassification Report:")
-print(
-    classification_report(
+    f1 = f1_score(
         y_test,
         y_pred,
         zero_division=0
     )
-)
+
+    mcc = matthews_corrcoef(
+        y_test,
+        y_pred
+    )
+
+
+    # --------------------------------------------------
+    # Store results
+    # --------------------------------------------------
+
+    auc_scores.append(auc)
+    f1_scores.append(f1)
+    mcc_scores.append(mcc)
+
+
+    # --------------------------------------------------
+    # Display fold results
+    # --------------------------------------------------
+
+    print("\nFold results:")
+    print(f"ROC-AUC: {auc:.4f}")
+    print(f"F1:      {f1:.4f}")
+    print(f"MCC:     {mcc:.4f}")
 
 
 # --------------------------------------------------
-# 12. Feature importance
+# 7. Calculate overall results
 # --------------------------------------------------
 
-feature_importance = pd.DataFrame({
-    "Feature": AST_FEATURES,
-    "Importance": model.feature_importances_
-})
+print("\n========================================")
+print("CROSS-VALIDATION RESULTS")
+print("========================================")
 
-feature_importance = feature_importance.sort_values(
-    by="Importance",
-    ascending=False
-)
+
+if len(auc_scores) == 0:
+    raise ValueError(
+        "No valid folds were available for evaluation."
+    )
+
+
+print("\nROC-AUC scores:")
+print([round(score, 4) for score in auc_scores])
+
+print("\nF1 scores:")
+print([round(score, 4) for score in f1_scores])
+
+print("\nMCC scores:")
+print([round(score, 4) for score in mcc_scores])
+
+
+# --------------------------------------------------
+# 8. Mean and standard deviation
+# --------------------------------------------------
 
 print("\n----------------------------------------")
-print("FEATURE IMPORTANCE")
+print("MEAN ± STANDARD DEVIATION")
 print("----------------------------------------")
 
-print(feature_importance.to_string(index=False))
+print(
+    f"ROC-AUC: {np.mean(auc_scores):.4f} "
+    f"± {np.std(auc_scores):.4f}"
+)
+
+print(
+    f"F1:      {np.mean(f1_scores):.4f} "
+    f"± {np.std(f1_scores):.4f}"
+)
+
+print(
+    f"MCC:     {np.mean(mcc_scores):.4f} "
+    f"± {np.std(mcc_scores):.4f}"
+)
+
+
+# --------------------------------------------------
+# 9. Final summary
+# --------------------------------------------------
+
+print("\n========================================")
+print("RANDOM FOREST CROSS-VALIDATION COMPLETE")
+print("========================================")
+
+print(f"Valid folds evaluated: {len(auc_scores)}")
