@@ -1,29 +1,163 @@
 import pandas as pd
+from pathlib import Path
 
 
-AST_FILE = "data/raw/ast_features_labeled.csv"
-PROMISE_FILE = "data/raw/ant-1.7.csv"
-OUTPUT_FILE = "data/processed/traditional_metrics.csv"
+# --------------------------------------------------
+# FILE PATHS
+# --------------------------------------------------
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+AST_FILE = BASE_DIR / "data" / "raw" / "ast_features_labeled.csv"
+PROMISE_FILE = BASE_DIR / "data" / "raw" / "ant-1.7.csv"
+
+OUTPUT_FILE = (
+    BASE_DIR
+    / "data"
+    / "processed"
+    / "traditional_metrics.csv"
+)
 
 
 # --------------------------------------------------
 # LOAD DATA
 # --------------------------------------------------
 
-ast_df = pd.read_csv(AST_FILE)
-promise_df = pd.read_csv(PROMISE_FILE)
+print("Loading AST data...")
+ast = pd.read_csv(AST_FILE)
 
-print("Datasets loaded successfully.")
+print("Loading PROMISE data...")
+promise = pd.read_csv(PROMISE_FILE)
 
-print(f"AST dataset methods: {len(ast_df)}")
-print(f"PROMISE classes:      {len(promise_df)}")
+
+# --------------------------------------------------
+# CLEAN COLUMN NAMES
+# --------------------------------------------------
+
+ast.columns = ast.columns.str.strip()
+promise.columns = promise.columns.str.strip()
+
+
+# --------------------------------------------------
+# REMOVE AST ROWS WITHOUT A CLASS
+# --------------------------------------------------
+
+# One AST method has no enclosing class:
+# None.java / isSelected
+#
+# It cannot be matched to a PROMISE class-level label,
+# so it is excluded from the traditional-metrics dataset.
+
+before_filter = len(ast)
+
+ast = ast.dropna(subset=["Class"]).copy()
+
+removed_rows = before_filter - len(ast)
+
+print(
+    "Removed AST rows without a class:",
+    removed_rows
+)
+
+
+# --------------------------------------------------
+# CREATE PACKAGE + CLASS FROM PROMISE NAME
+# --------------------------------------------------
+
+promise["name"] = (
+    promise["name"]
+    .astype(str)
+    .str.strip()
+)
+
+# Everything before the final dot = package
+promise["Package"] = (
+    promise["name"]
+    .str.rsplit(".", n=1)
+    .str[0]
+)
+
+# Everything after the final dot = class
+promise["Class"] = (
+    promise["name"]
+    .str.rsplit(".", n=1)
+    .str[1]
+)
+
+
+# --------------------------------------------------
+# CHECK FOR DUPLICATE PACKAGE + CLASS MAPPINGS
+# --------------------------------------------------
+
+duplicate_keys = (
+    promise
+    .groupby(["Package", "Class"])
+    .size()
+    .reset_index(name="count")
+)
+
+duplicates = duplicate_keys[
+    duplicate_keys["count"] > 1
+]
+
+if not duplicates.empty:
+
+    print(
+        "WARNING: Duplicate Package + Class mappings found:"
+    )
+
+    print(duplicates)
+
+    raise ValueError(
+        "Duplicate Package + Class mappings found "
+        "in PROMISE data."
+    )
+
+
+# --------------------------------------------------
+# CREATE BINARY DEFECT LABEL
+# --------------------------------------------------
+
+promise["bug"] = pd.to_numeric(
+    promise["bug"],
+    errors="coerce"
+)
+
+promise["Defective"] = (
+    promise["bug"] > 0
+).astype(int)
+
+
+# --------------------------------------------------
+# CHECK REQUIRED AST COLUMNS
+# --------------------------------------------------
+
+required_ast_columns = [
+    "File",
+    "Package",
+    "Class",
+    "Method",
+    "Defective"
+]
+
+missing_ast = [
+    column
+    for column in required_ast_columns
+    if column not in ast.columns
+]
+
+if missing_ast:
+
+    raise ValueError(
+        f"Missing AST columns: {missing_ast}"
+    )
 
 
 # --------------------------------------------------
 # TRADITIONAL PROMISE METRICS
 # --------------------------------------------------
 
-TRADITIONAL_FEATURES = [
+traditional_features = [
     "wmc",
     "dit",
     "noc",
@@ -47,219 +181,109 @@ TRADITIONAL_FEATURES = [
 ]
 
 
-print("\nTraditional metrics:")
-print(TRADITIONAL_FEATURES)
-
-
 # --------------------------------------------------
-# CREATE SIMPLE CLASS NAME
+# CHECK REQUIRED PROMISE COLUMNS
 # --------------------------------------------------
 
-# PROMISE uses fully-qualified class names such as:
-#
-# org.apache.tools.ant.taskdefs.Rmic
-#
-# Our AST dataset uses:
-#
-# Rmic
-#
-# Therefore, extract the final class name.
+required_promise_columns = [
+    "Package",
+    "Class",
+    "bug"
+] + traditional_features
 
-promise_df["Class"] = (
-    promise_df["name"]
-    .str.split(".")
-    .str[-1]
-)
-
-
-# --------------------------------------------------
-# CREATE SOURCE FILE NAME
-# --------------------------------------------------
-
-promise_df["File"] = (
-    promise_df["Class"] + ".java"
-)
-
-
-# --------------------------------------------------
-# CREATE BINARY DEFECT LABEL
-# --------------------------------------------------
-
-promise_df["Defective"] = (
-    promise_df["bug"] > 0
-).astype(int)
-
-
-# --------------------------------------------------
-# CHECK DUPLICATE FILE/CLASS COMBINATIONS
-# --------------------------------------------------
-
-duplicates = promise_df.duplicated(
-    subset=["File", "Class"],
-    keep=False
-)
-
-if duplicates.any():
-
-    print("\nWARNING:")
-    print("Duplicate File/Class combinations found:")
-
-    print(
-        promise_df.loc[
-            duplicates,
-            ["name", "File", "Class"]
-        ].to_string(index=False)
-    )
-
-    raise ValueError(
-        "Duplicate class mappings found. "
-        "Traditional metrics cannot be safely "
-        "merged until these are resolved."
-    )
-
-
-# --------------------------------------------------
-# KEEP ONLY REQUIRED COLUMNS
-# --------------------------------------------------
-
-promise_metrics = promise_df[
-    ["File", "Class"] +
-    TRADITIONAL_FEATURES +
-    ["bug", "Defective"]
+missing_promise = [
+    column
+    for column in required_promise_columns
+    if column not in promise.columns
 ]
 
+if missing_promise:
+
+    raise ValueError(
+        f"Missing PROMISE columns: {missing_promise}"
+    )
+
 
 # --------------------------------------------------
-# MERGE WITH METHOD-LEVEL AST DATA
+# SELECT PROMISE METRICS
 # --------------------------------------------------
 
-traditional_df = ast_df[
-    ["File", "Class", "Method"]
-].merge(
+promise_metrics = promise[
+    [
+        "Package",
+        "Class",
+        "bug"
+    ] + traditional_features
+].copy()
+
+
+# --------------------------------------------------
+# MERGE AST METHODS WITH CLASS-LEVEL METRICS
+# --------------------------------------------------
+
+print(
+    "Merging AST methods with PROMISE metrics..."
+)
+
+merged = ast.merge(
     promise_metrics,
-    on=["File", "Class"],
-    how="left"
+    on=["Package", "Class"],
+    how="inner",
+    validate="many_to_one"
 )
 
 
 # --------------------------------------------------
-# CHECK FOR UNMATCHED METHODS
+# REPORT RESULTS
 # --------------------------------------------------
 
-missing_metrics = traditional_df[
-    TRADITIONAL_FEATURES
-].isnull().any(axis=1)
-
-
-print("\n----------------------------------------")
-print("MERGE CHECK")
-print("----------------------------------------")
+print()
+print("Merge complete.")
 
 print(
-    f"Methods before merge: "
-    f"{len(ast_df)}"
+    "AST method rows:",
+    len(ast)
 )
 
 print(
-    f"Methods after merge:  "
-    f"{len(traditional_df)}"
+    "PROMISE classes:",
+    len(promise_metrics)
 )
 
 print(
-    f"Methods without traditional metrics: "
-    f"{missing_metrics.sum()}"
+    "Merged method rows:",
+    len(merged)
+)
+
+print(
+    "Matched source files:",
+    merged["File"].nunique()
 )
 
 
-if missing_metrics.any():
+# --------------------------------------------------
+# CHECK FOR UNMATCHED PACKAGE + CLASS COMBINATIONS
+# --------------------------------------------------
 
-    print("\nUnmatched methods:")
-
-    print(
-        traditional_df.loc[
-            missing_metrics,
-            ["File", "Class", "Method"]
-        ].head(20).to_string(index=False)
+ast_keys = set(
+    zip(
+        ast["Package"],
+        ast["Class"]
     )
+)
 
-    raise ValueError(
-        "Some methods could not be matched "
-        "with PROMISE traditional metrics."
+promise_keys = set(
+    zip(
+        promise_metrics["Package"],
+        promise_metrics["Class"]
     )
-
-
-# --------------------------------------------------
-# CHECK LABEL CONSISTENCY
-# --------------------------------------------------
-
-ast_labels = ast_df[
-    ["File", "Class", "bug", "Defective"]
-].drop_duplicates(
-    subset=["File", "Class"]
 )
 
-label_check = traditional_df.merge(
-    ast_labels,
-    on=["File", "Class"],
-    how="left",
-    suffixes=("_traditional", "_ast")
-)
-
-
-bug_difference = (
-    label_check["bug_traditional"]
-    != label_check["bug_ast"]
-)
-
-defective_difference = (
-    label_check["Defective_traditional"]
-    != label_check["Defective_ast"]
-)
-
-
-print("\n----------------------------------------")
-print("LABEL CONSISTENCY CHECK")
-print("----------------------------------------")
+unmatched_keys = ast_keys - promise_keys
 
 print(
-    f"Bug-label differences: "
-    f"{bug_difference.sum()}"
-)
-
-print(
-    f"Defective-label differences: "
-    f"{defective_difference.sum()}"
-)
-
-
-if bug_difference.any() or defective_difference.any():
-
-    raise ValueError(
-        "Traditional metrics labels do not match "
-        "the existing AST labels."
-    )
-
-
-# --------------------------------------------------
-# KEEP FINAL DATASET
-# --------------------------------------------------
-
-traditional_df = traditional_df[
-    ["File", "Class", "Method"] +
-    TRADITIONAL_FEATURES +
-    ["bug", "Defective"]
-]
-
-
-# --------------------------------------------------
-# CREATE OUTPUT DIRECTORY
-# --------------------------------------------------
-
-import os
-
-os.makedirs(
-    "data/processed",
-    exist_ok=True
+    "Unmatched Package + Class combinations:",
+    len(unmatched_keys)
 )
 
 
@@ -267,56 +291,19 @@ os.makedirs(
 # SAVE DATASET
 # --------------------------------------------------
 
-traditional_df.to_csv(
+OUTPUT_FILE.parent.mkdir(
+    parents=True,
+    exist_ok=True
+)
+
+merged.to_csv(
     OUTPUT_FILE,
     index=False
 )
 
-
-# --------------------------------------------------
-# SUMMARY
-# --------------------------------------------------
-
-print("\n========================================")
-print("TRADITIONAL METRICS DATASET CREATED")
-print("========================================")
-
+print()
 print(
-    f"Output file: {OUTPUT_FILE}"
+    "Traditional metrics dataset saved to:"
 )
 
-print(
-    f"Number of methods: "
-    f"{len(traditional_df)}"
-)
-
-print(
-    f"Number of files: "
-    f"{traditional_df['File'].nunique()}"
-)
-
-print(
-    f"Number of classes: "
-    f"{traditional_df['Class'].nunique()}"
-)
-
-print("\nColumns:")
-print(traditional_df.columns.tolist())
-
-print("\nMissing values:")
-print(traditional_df.isnull().sum())
-
-print("\nDefective distribution:")
-print(
-    traditional_df["Defective"].value_counts()
-)
-
-print("\nDefective percentages:")
-print(
-    traditional_df["Defective"]
-    .value_counts(normalize=True) * 100
-)
-
-print("\n========================================")
-print("PREPROCESSING COMPLETE")
-print("========================================")
+print(OUTPUT_FILE)
