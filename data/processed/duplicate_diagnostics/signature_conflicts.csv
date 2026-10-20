@@ -1,0 +1,148 @@
+File,Package,Class,MethodSignature,Occurrences,DifferentFeatures,FeatureConflict
+AbstractSshMessage.java,org.apache.tools.ant.taskdefs.optional.ssh,AbstractSshMessage,log(String),2,"MethodCalls, ASTDepth, BranchingFactor",True
+AntStructure.java,org.apache.tools.ant.taskdefs,AntStructure,areNmtokens(String[]),2,"If, For, Return, Variables, ASTDepth, BranchingFactor, LOC",True
+AntStructure.java,org.apache.tools.ant.taskdefs,AntStructure,isNmtoken(String),2,"If, For, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+AntStructure.java,org.apache.tools.ant.taskdefs,AntStructure,"printElementDecl(PrintWriter, Project, String, Class)",2,"If, For, While, Return, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+AntStructure.java,org.apache.tools.ant.taskdefs,AntStructure,"printHead(PrintWriter, Project, Hashtable, Hashtable)",2,"MethodCalls, ASTDepth, BranchingFactor, LOC",True
+AntStructure.java,org.apache.tools.ant.taskdefs,AntStructure,printTail(PrintWriter),2,"MethodCalls, ASTDepth, BranchingFactor, LOC",True
+AntStructure.java,org.apache.tools.ant.taskdefs,AntStructure,printTargetDecl(PrintWriter),2,"MethodCalls, ASTDepth, BranchingFactor, LOC",True
+Assertions.java,org.apache.tools.ant.types,Assertions,getCommandPrefix(),3,"Return, ASTDepth, BranchingFactor, LOC",True
+Checksum.java,org.apache.tools.ant.taskdefs,Checksum,add(ResourceCollection),2,"If, Return, ASTDepth, BranchingFactor, LOC",True
+CollectionUtils.java,org.apache.tools.ant.util,CollectionUtils,hasMoreElements(),3,"MethodCalls, ASTDepth, BranchingFactor",True
+CollectionUtils.java,org.apache.tools.ant.util,CollectionUtils,nextElement(),3,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+CommandlineJava.java,org.apache.tools.ant.types,CommandlineJava,addSysproperties(SysProperties),2,"MethodCalls, ASTDepth, BranchingFactor, LOC",True
+CommandlineJava.java,org.apache.tools.ant.types,CommandlineJava,addSyspropertyset(PropertySet),2,,False
+CommandlineJava.java,org.apache.tools.ant.types,CommandlineJava,clone(),2,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+CommandlineJava.java,org.apache.tools.ant.types,CommandlineJava,size(),2,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+ComponentHelper.java,org.apache.tools.ant,ComponentHelper,getDefinition(String),2,"MethodCalls, ASTDepth, BranchingFactor, LOC",True
+Concat.java,org.apache.tools.ant.taskdefs,Concat,addText(String),2,"If, ASTDepth, BranchingFactor, LOC",True
+Concat.java,org.apache.tools.ant.taskdefs,Concat,setEncoding(String),2,"If, ASTDepth, BranchingFactor, LOC",True
+Definer.java,org.apache.tools.ant.taskdefs,Definer,getValues(),2,"ASTDepth, BranchingFactor",True
+EjbJar.java,org.apache.tools.ant.taskdefs.optional.ejb,EjbJar,getValues(),2,"BranchingFactor, LOC",True
+Execute.java,org.apache.tools.ant.taskdefs,Execute,"exec(Project, String[], String[])",3,"If, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+Execute.java,org.apache.tools.ant.taskdefs,Execute,"exec(Project, String[], String[], File)",8,"If, Return, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+FixCRLF.java,org.apache.tools.ant.taskdefs,FixCRLF,getState(),2,"MethodCalls, ASTDepth, BranchingFactor",True
+FixCRLF.java,org.apache.tools.ant.taskdefs,FixCRLF,getValues(),2,"BranchingFactor, LOC",True
+FixCRLF.java,org.apache.tools.ant.taskdefs,FixCRLF,setState(int),2,MethodCalls,True
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,editsBlocked(),2,"ASTDepth, BranchingFactor",True
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,equals(Object),2,LOC,True
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,getValues(),2,BranchingFactor,True
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,hashCode(),2,,False
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,newInstance(),2,,False
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,newInstance(String),2,,False
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,read(),8,"If, For, While, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,resolve(),2,"If, Return, MethodCalls, BranchingFactor, LOC",True
+Get.java,org.apache.tools.ant.taskdefs,Get,beginDownload(),3,"ASTDepth, BranchingFactor, LOC",True
+Get.java,org.apache.tools.ant.taskdefs,Get,endDownload(),3,"MethodCalls, ASTDepth, BranchingFactor, LOC",True
+Get.java,org.apache.tools.ant.taskdefs,Get,onTick(),3,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+IPlanetEjbc.java,org.apache.tools.ant.taskdefs.optional.ejb,IPlanetEjbc,getCmpDescriptors(),2,"For, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+IPlanetEjbc.java,org.apache.tools.ant.taskdefs.optional.ejb,IPlanetEjbc,getDisplayName(),2,,False
+IPlanetEjbc.java,org.apache.tools.ant.taskdefs.optional.ejb,IPlanetEjbc,getEjbs(),2,"Variables, ASTDepth, BranchingFactor, LOC",True
+IPlanetEjbc.java,org.apache.tools.ant.taskdefs.optional.ejb,IPlanetEjbc,"registerDTD(String, String)",2,"If, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+IPlanetEjbc.java,org.apache.tools.ant.taskdefs.optional.ejb,IPlanetEjbc,toString(),2,"While, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+Ildasm.java,org.apache.tools.ant.taskdefs.optional.dotnet,Ildasm,getValues(),2,"ASTDepth, BranchingFactor, LOC",True
+Input.java,org.apache.tools.ant.taskdefs,Input,getInputHandler(),2,"If, Return, TryCatch, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,"create(Project, Object, Object)",6,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,getRealObject(),3,"MethodCalls, ASTDepth, BranchingFactor",True
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,isPolyMorphic(),2,,False
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,"set(Project, Object, String)",9,"If, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,"store(Object, Object)",3,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+JUnitTask.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTask,getValues(),2,"ASTDepth, BranchingFactor, LOC",True
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,"addError(Test, Throwable)",3,"If, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,"addFailure(Test, AssertionFailedError)",3,"MethodCalls, ASTDepth, BranchingFactor, LOC",True
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,"addFailure(Test, Throwable)",2,"MethodCalls, Variables, ASTDepth, BranchingFactor",True
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,endTest(Test),3,"MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,startTest(Test),3,"MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,write(int),2,,False
+Javac.java,org.apache.tools.ant.taskdefs,Javac,setCompiler(String),2,BranchingFactor,True
+Javadoc.java,org.apache.tools.ant.taskdefs,Javadoc,addPackage(PackageName),2,,False
+Javadoc.java,org.apache.tools.ant.taskdefs,Javadoc,getName(),3,,False
+Javadoc.java,org.apache.tools.ant.taskdefs,Javadoc,setName(String),4,"MethodCalls, ASTDepth, BranchingFactor",True
+Length.java,org.apache.tools.ant.taskdefs,Length,complete(),3,"MethodCalls, ASTDepth, BranchingFactor, LOC",True
+Length.java,org.apache.tools.ant.taskdefs,Length,handle(Resource),3,"If, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+MSVSS.java,org.apache.tools.ant.taskdefs.optional.vss,MSVSS,getValues(),2,,False
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,equals(Object),3,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,getDescription(),3,,False
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,getName(),3,,False
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,hashCode(),3,"MethodCalls, ASTDepth, BranchingFactor, LOC",True
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,setDescription(String),3,,False
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,setName(String),4,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,setOptional(boolean),2,,False
+MacroInstance.java,org.apache.tools.ant.taskdefs,MacroInstance,addTask(Task),2,,False
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,addConfiguredAttribute(Attribute),2,"If, MethodCalls, Variables, BranchingFactor, LOC",True
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,equals(Object),3,"If, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,getName(),2,,False
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,getWarnings(),2,"While, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,hashCode(),3,"If, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,setName(String),2,,False
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,write(PrintWriter),3,"If, For, While, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+Mapper.java,org.apache.tools.ant.types,Mapper,getImplementation(),2,"If, Return, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+ModifiedSelector.java,org.apache.tools.ant.types.selectors.modifiedselector,ModifiedSelector,getValues(),3,BranchingFactor,True
+OutputStreamFunneler.java,org.apache.tools.ant.util,OutputStreamFunneler,close(),2,"TryCatch, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+P4Change.java,org.apache.tools.ant.taskdefs.optional.perforce,P4Change,process(String),2,"If, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+P4Label.java,org.apache.tools.ant.taskdefs.optional.perforce,P4Label,process(String),4,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+Parallel.java,org.apache.tools.ant.taskdefs,Parallel,addTask(Task),2,,False
+Parallel.java,org.apache.tools.ant.taskdefs,Parallel,run(),2,"If, ASTDepth, BranchingFactor, LOC",True
+Path.java,org.apache.tools.ant.types,Path,isFilesystemOnly(),2,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+Path.java,org.apache.tools.ant.types,Path,iterator(),2,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+Path.java,org.apache.tools.ant.types,Path,setLocation(File),2,"MethodCalls, ASTDepth, BranchingFactor, LOC",True
+Path.java,org.apache.tools.ant.types,Path,setPath(String),2,"MethodCalls, ASTDepth, LOC",True
+Path.java,org.apache.tools.ant.types,Path,size(),2,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+PatternSet.java,org.apache.tools.ant.types,PatternSet,toString(),2,"If, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+ProcessDestroyer.java,org.apache.tools.ant.taskdefs,ProcessDestroyer,run(),2,"If, While, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+ProjectHelper2.java,org.apache.tools.ant.helper,ProjectHelper2,"characters(char[], int, int, AntXMLContext)",2,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+ProjectHelper2.java,org.apache.tools.ant.helper,ProjectHelper2,"onEndElement(String, String, AntXMLContext)",3,"MethodCalls, ASTDepth, BranchingFactor",True
+ProjectHelper2.java,org.apache.tools.ant.helper,ProjectHelper2,"onStartChild(String, String, String, Attributes, AntXMLContext)",5,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+ProjectHelper2.java,org.apache.tools.ant.helper,ProjectHelper2,"onStartElement(String, String, String, Attributes, AntXMLContext)",4,"If, For, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,"characters(char[], int, int)",5,"If, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,"init(String, AttributeList)",5,"If, For, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,"startElement(String, AttributeList)",7,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+PropertyFile.java,org.apache.tools.ant.taskdefs.optional,PropertyFile,checkParameters(),2,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+PropertyFile.java,org.apache.tools.ant.taskdefs.optional,PropertyFile,getValues(),3,"ASTDepth, BranchingFactor",True
+PropertySet.java,org.apache.tools.ant.types,PropertySet,toString(),2,"If, For, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+Quantifier.java,org.apache.tools.ant.types,Quantifier,"eval(int, int)",6,"Return, ASTDepth, BranchingFactor",True
+Replace.java,org.apache.tools.ant.taskdefs,Replace,close(),2,,False
+Replace.java,org.apache.tools.ant.taskdefs,Replace,closeQuietly(),2,,False
+Replace.java,org.apache.tools.ant.taskdefs,Replace,flush(),2,"MethodCalls, ASTDepth, BranchingFactor, LOC",True
+Replace.java,org.apache.tools.ant.taskdefs,Replace,getOutputBuffer(),2,,False
+Replace.java,org.apache.tools.ant.taskdefs,Replace,process(),2,"If, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+Replace.java,org.apache.tools.ant.taskdefs,Replace,setInputBuffer(StringBuffer),2,,False
+Replace.java,org.apache.tools.ant.taskdefs,Replace,setToken(String),2,MethodCalls,True
+Replace.java,org.apache.tools.ant.taskdefs,Replace,setValue(String),2,MethodCalls,True
+Resources.java,org.apache.tools.ant.types.resources,Resources,hasNext(),2,"While, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+Resources.java,org.apache.tools.ant.types.resources,Resources,isFilesystemOnly(),2,"If, For, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+Resources.java,org.apache.tools.ant.types.resources,Resources,iterator(),3,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+Resources.java,org.apache.tools.ant.types.resources,Resources,next(),2,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+Resources.java,org.apache.tools.ant.types.resources,Resources,remove(),2,,False
+Resources.java,org.apache.tools.ant.types.resources,Resources,size(),3,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+Rmic.java,org.apache.tools.ant.taskdefs,Rmic,setCompiler(String),2,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+SQLExec.java,org.apache.tools.ant.taskdefs,SQLExec,addText(String),2,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+SQLExec.java,org.apache.tools.ant.taskdefs,SQLExec,getValues(),2,"ASTDepth, BranchingFactor",True
+SQLExec.java,org.apache.tools.ant.taskdefs,SQLExec,setSrc(File),2,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+ScriptDef.java,org.apache.tools.ant.taskdefs.optional.script,ScriptDef,setName(String),3,"MethodCalls, ASTDepth, BranchingFactor",True
+Tar.java,org.apache.tools.ant.taskdefs,Tar,getValues(),2,"ASTDepth, BranchingFactor",True
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,chain(Reader),3,"If, While, Return, ASTDepth, BranchingFactor, LOC",True
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,filter(String),8,"If, For, While, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,initialize(),2,"Return, BranchingFactor",True
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,read(),2,"If, For, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,setFlags(String),2,,False
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,setPattern(String),2,,False
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,setReplace(String),2,,False
+Touch.java,org.apache.tools.ant.taskdefs,Touch,getFallbackFormat(),3,"Return, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+Touch.java,org.apache.tools.ant.taskdefs,Touch,getPrimaryFormat(),3,"Return, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+VerifyJar.java,org.apache.tools.ant.taskdefs,VerifyJar,clear(),2,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+VerifyJar.java,org.apache.tools.ant.taskdefs,VerifyJar,toString(),2,,False
+WsdlToDotnet.java,org.apache.tools.ant.taskdefs.optional.dotnet,WsdlToDotnet,setMakeURL(boolean),2,MethodCalls,True
+WsdlToDotnet.java,org.apache.tools.ant.taskdefs.optional.dotnet,WsdlToDotnet,setUrl(String),2,MethodCalls,True
+WsdlToDotnet.java,org.apache.tools.ant.taskdefs.optional.dotnet,WsdlToDotnet,validate(),2,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",True
+XMLCatalog.java,org.apache.tools.ant.types,XMLCatalog,"resolve(String, String)",4,"If, Return, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+XMLCatalog.java,org.apache.tools.ant.types,XMLCatalog,"resolveEntity(String, String)",4,"If, Return, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",True
+XMLFragment.java,org.apache.tools.ant.util,XMLFragment,addText(String),2,BranchingFactor,True
+XMLFragment.java,org.apache.tools.ant.util,XMLFragment,"createDynamicElement(String, String, String)",2,,False
+XMLValidateTask.java,org.apache.tools.ant.taskdefs.optional,XMLValidateTask,getName(),2,,False
+XMLValidateTask.java,org.apache.tools.ant.taskdefs.optional,XMLValidateTask,getValue(),2,BranchingFactor,True
+XMLValidateTask.java,org.apache.tools.ant.taskdefs.optional,XMLValidateTask,setName(String),2,BranchingFactor,True
+XSLTProcess.java,org.apache.tools.ant.taskdefs,XSLTProcess,getName(),4,"If, ASTDepth, BranchingFactor, LOC",True
+XSLTProcess.java,org.apache.tools.ant.taskdefs,XSLTProcess,getValue(),2,,False
+XSLTProcess.java,org.apache.tools.ant.taskdefs,XSLTProcess,setName(String),3,,False
+Zip.java,org.apache.tools.ant.taskdefs,Zip,getValues(),2,,False

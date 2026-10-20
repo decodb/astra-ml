@@ -1,0 +1,390 @@
+File,Package,Class,Method,MethodSignature,If,For,While,Return,TryCatch,MethodCalls,Variables,Parameters,ASTDepth,BranchingFactor,LOC
+AbstractSshMessage.java,org.apache.tools.ant.taskdefs.optional.ssh,AbstractSshMessage,log,log(String),0,0,0,0,0,0,0,1,4,0.9,3
+AbstractSshMessage.java,org.apache.tools.ant.taskdefs.optional.ssh,AbstractSshMessage,log,log(String),0,0,0,0,0,1,0,1,6,0.9375,3
+AntStructure.java,org.apache.tools.ant.taskdefs,AntStructure,printHead,"printHead(PrintWriter, Project, Hashtable, Hashtable)",0,0,0,0,0,0,0,4,4,0.9473684210526316,2
+AntStructure.java,org.apache.tools.ant.taskdefs,AntStructure,printTargetDecl,printTargetDecl(PrintWriter),0,0,0,0,0,0,0,1,4,0.8571428571428571,1
+AntStructure.java,org.apache.tools.ant.taskdefs,AntStructure,printElementDecl,"printElementDecl(PrintWriter, Project, String, Class)",0,0,0,0,0,0,0,4,4,0.9473684210526316,2
+AntStructure.java,org.apache.tools.ant.taskdefs,AntStructure,printTail,printTail(PrintWriter),0,0,0,0,0,0,0,1,4,0.8571428571428571,1
+AntStructure.java,org.apache.tools.ant.taskdefs,AntStructure,printTail,printTail(PrintWriter),0,0,0,0,0,1,0,1,6,0.9285714285714286,3
+AntStructure.java,org.apache.tools.ant.taskdefs,AntStructure,printHead,"printHead(PrintWriter, Project, Hashtable, Hashtable)",0,0,0,0,0,3,0,4,7,0.9705882352941176,3
+AntStructure.java,org.apache.tools.ant.taskdefs,AntStructure,printTargetDecl,printTargetDecl(PrintWriter),0,0,0,0,0,14,0,1,6,0.9894736842105264,17
+AntStructure.java,org.apache.tools.ant.taskdefs,AntStructure,printElementDecl,"printElementDecl(PrintWriter, Project, String, Class)",17,4,2,3,3,93,16,4,23,0.9988399071925754,148
+AntStructure.java,org.apache.tools.ant.taskdefs,AntStructure,isNmtoken,isNmtoken(String),1,1,0,2,0,3,3,1,13,0.9875,12
+AntStructure.java,org.apache.tools.ant.taskdefs,AntStructure,areNmtokens,areNmtokens(String[]),1,1,0,2,0,1,1,1,10,0.9767441860465116,8
+AntStructure.java,org.apache.tools.ant.taskdefs,AntStructure,isNmtoken,isNmtoken(String),0,0,0,1,0,1,0,1,6,0.9375,3
+AntStructure.java,org.apache.tools.ant.taskdefs,AntStructure,areNmtokens,areNmtokens(String[]),0,0,0,1,0,1,0,1,6,0.9411764705882352,3
+Assertions.java,org.apache.tools.ant.types,Assertions,getCommandPrefix,getCommandPrefix(),0,0,0,0,0,0,0,0,3,0.8333333333333334,1
+Assertions.java,org.apache.tools.ant.types,Assertions,getCommandPrefix,getCommandPrefix(),0,0,0,1,0,0,0,0,4,0.875,3
+Assertions.java,org.apache.tools.ant.types,Assertions,getCommandPrefix,getCommandPrefix(),0,0,0,1,0,0,0,0,4,0.875,3
+Checksum.java,org.apache.tools.ant.taskdefs,Checksum,add,add(ResourceCollection),0,0,0,0,0,1,0,1,6,0.9375,3
+Checksum.java,org.apache.tools.ant.taskdefs,Checksum,add,add(ResourceCollection),1,0,0,1,0,1,0,1,9,0.9736842105263158,7
+CollectionUtils.java,org.apache.tools.ant.util,CollectionUtils,hasMoreElements,hasMoreElements(),0,0,0,1,0,0,0,0,4,0.8571428571428571,3
+CollectionUtils.java,org.apache.tools.ant.util,CollectionUtils,nextElement,nextElement(),0,0,0,0,0,0,0,0,6,0.9166666666666666,3
+CollectionUtils.java,org.apache.tools.ant.util,CollectionUtils,hasMoreElements,hasMoreElements(),0,0,0,1,0,1,0,0,6,0.9,3
+CollectionUtils.java,org.apache.tools.ant.util,CollectionUtils,nextElement,nextElement(),0,0,0,1,0,1,0,0,6,0.9090909090909092,3
+CollectionUtils.java,org.apache.tools.ant.util,CollectionUtils,hasMoreElements,hasMoreElements(),0,0,0,1,0,2,0,0,7,0.9333333333333332,3
+CollectionUtils.java,org.apache.tools.ant.util,CollectionUtils,nextElement,nextElement(),1,0,0,2,0,3,0,0,8,0.96,7
+CommandlineJava.java,org.apache.tools.ant.types,CommandlineJava,size,size(),0,0,0,1,0,3,1,0,7,0.9565217391304348,4
+CommandlineJava.java,org.apache.tools.ant.types,CommandlineJava,clone,clone(),0,0,0,2,1,3,1,0,10,0.9830508474576272,10
+CommandlineJava.java,org.apache.tools.ant.types,CommandlineJava,addSyspropertyset,addSyspropertyset(PropertySet),0,0,0,0,0,1,0,1,6,0.9375,3
+CommandlineJava.java,org.apache.tools.ant.types,CommandlineJava,addSysproperties,addSysproperties(SysProperties),0,0,0,0,0,2,0,1,7,0.9629629629629628,4
+CommandlineJava.java,org.apache.tools.ant.types,CommandlineJava,addSyspropertyset,addSyspropertyset(PropertySet),0,0,0,0,0,1,0,1,6,0.9375,3
+CommandlineJava.java,org.apache.tools.ant.types,CommandlineJava,addSysproperties,addSysproperties(SysProperties),0,0,0,0,0,1,0,1,6,0.9375,3
+CommandlineJava.java,org.apache.tools.ant.types,CommandlineJava,size,size(),5,0,0,1,0,13,1,0,10,0.9882352941176472,25
+CommandlineJava.java,org.apache.tools.ant.types,CommandlineJava,clone,clone(),3,0,0,1,1,7,1,0,12,0.9924812030075189,20
+ComponentHelper.java,org.apache.tools.ant,ComponentHelper,getDefinition,getDefinition(String),0,0,0,1,0,2,0,1,6,0.9545454545454546,4
+ComponentHelper.java,org.apache.tools.ant,ComponentHelper,getDefinition,getDefinition(String),0,0,0,1,0,1,0,1,8,0.9473684210526316,3
+Concat.java,org.apache.tools.ant.taskdefs,Concat,setEncoding,setEncoding(String),1,0,0,0,0,0,0,1,8,0.9642857142857144,6
+Concat.java,org.apache.tools.ant.taskdefs,Concat,addText,addText(String),1,0,0,0,0,2,0,1,10,0.9714285714285714,11
+Concat.java,org.apache.tools.ant.taskdefs,Concat,setEncoding,setEncoding(String),0,0,0,0,0,0,0,1,6,0.9375,3
+Concat.java,org.apache.tools.ant.taskdefs,Concat,addText,addText(String),0,0,0,0,0,2,0,1,7,0.95,3
+Definer.java,org.apache.tools.ant.taskdefs,Definer,getValues,getValues(),0,0,0,1,0,0,0,0,7,0.9523809523809524,3
+Definer.java,org.apache.tools.ant.taskdefs,Definer,getValues,getValues(),0,0,0,1,0,0,0,0,6,0.9333333333333332,3
+EjbJar.java,org.apache.tools.ant.taskdefs.optional.ejb,EjbJar,getValues,getValues(),0,0,0,1,0,0,0,0,7,0.9523809523809524,3
+EjbJar.java,org.apache.tools.ant.taskdefs.optional.ejb,EjbJar,getValues,getValues(),0,0,0,1,0,0,0,0,7,0.9411764705882352,6
+Execute.java,org.apache.tools.ant.taskdefs,Execute,exec,"exec(Project, String[], String[])",1,0,0,1,0,4,0,3,10,0.9821428571428572,8
+Execute.java,org.apache.tools.ant.taskdefs,Execute,exec,"exec(Project, String[], String[], File)",1,0,0,1,0,1,0,4,8,0.9791666666666666,8
+Execute.java,org.apache.tools.ant.taskdefs,Execute,exec,"exec(Project, String[], String[], File)",3,0,0,1,1,5,1,4,12,0.9927007299270072,24
+Execute.java,org.apache.tools.ant.taskdefs,Execute,exec,"exec(Project, String[], String[])",0,0,0,1,0,1,0,3,6,0.9696969696969696,4
+Execute.java,org.apache.tools.ant.taskdefs,Execute,exec,"exec(Project, String[], String[], File)",2,0,0,2,0,7,4,4,11,0.9945652173913044,26
+Execute.java,org.apache.tools.ant.taskdefs,Execute,exec,"exec(Project, String[], String[], File)",2,0,0,2,0,5,3,4,11,0.99375,24
+Execute.java,org.apache.tools.ant.taskdefs,Execute,exec,"exec(Project, String[], String[], File)",1,0,0,2,1,7,0,4,9,0.9866666666666668,12
+Execute.java,org.apache.tools.ant.taskdefs,Execute,exec,"exec(Project, String[], String[], File)",4,0,0,2,0,9,4,4,12,0.995,31
+Execute.java,org.apache.tools.ant.taskdefs,Execute,exec,"exec(Project, String[], String[], File)",4,0,0,2,0,9,4,4,12,0.9951690821256038,32
+Execute.java,org.apache.tools.ant.taskdefs,Execute,exec,"exec(Project, String[], String[])",0,0,0,1,0,4,2,3,11,0.9848484848484848,8
+Execute.java,org.apache.tools.ant.taskdefs,Execute,exec,"exec(Project, String[], String[], File)",0,0,0,1,0,4,2,4,11,0.9861111111111112,8
+FixCRLF.java,org.apache.tools.ant.taskdefs,FixCRLF,getState,getState(),0,0,0,1,0,0,0,0,5,0.875,3
+FixCRLF.java,org.apache.tools.ant.taskdefs,FixCRLF,setState,setState(int),0,0,0,0,0,0,0,1,6,0.9333333333333332,3
+FixCRLF.java,org.apache.tools.ant.taskdefs,FixCRLF,setState,setState(int),0,0,0,0,0,1,0,1,6,0.9333333333333332,3
+FixCRLF.java,org.apache.tools.ant.taskdefs,FixCRLF,getState,getState(),0,0,0,1,0,1,0,0,6,0.9,3
+FixCRLF.java,org.apache.tools.ant.taskdefs,FixCRLF,getValues,getValues(),0,0,0,1,0,0,0,0,6,0.9375,3
+FixCRLF.java,org.apache.tools.ant.taskdefs,FixCRLF,getValues,getValues(),0,0,0,1,0,0,0,0,6,0.95,4
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,read,read(),1,0,0,1,0,2,0,0,7,0.9523809523809524,6
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,editsBlocked,editsBlocked(),0,0,0,1,0,1,0,0,9,0.95,3
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,read,read(),0,0,0,1,0,1,0,0,8,0.9629629629629628,3
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,editsBlocked,editsBlocked(),0,0,0,1,0,1,0,0,6,0.9166666666666666,3
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,read,read(),0,0,0,1,0,1,1,0,10,0.9953917050691244,95
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,read,read(),9,0,1,1,0,12,6,0,14,0.9959183673469388,67
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,read,read(),2,0,0,2,0,1,1,0,10,0.9791666666666666,14
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,read,read(),1,0,0,2,0,1,2,0,7,0.9787234042553192,12
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,read,read(),2,0,3,1,0,7,4,0,17,0.9958677685950412,66
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,read,read(),1,1,0,1,0,3,2,0,11,0.9876543209876544,24
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,getValues,getValues(),0,0,0,1,0,0,0,0,6,0.9375,3
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,equals,equals(Object),0,0,0,1,0,2,0,1,10,0.9629629629629628,4
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,hashCode,hashCode(),0,0,0,1,0,1,0,0,5,0.875,3
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,resolve,resolve(),3,0,0,3,0,3,0,0,7,0.9772727272727272,12
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,newInstance,newInstance(),0,0,0,1,0,2,0,0,6,0.9090909090909092,3
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,newInstance,newInstance(String),0,0,0,1,0,1,1,1,8,0.9666666666666668,5
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,getValues,getValues(),0,0,0,1,0,0,0,0,6,0.95,3
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,equals,equals(Object),0,0,0,1,0,2,0,1,10,0.9629629629629628,3
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,hashCode,hashCode(),0,0,0,1,0,1,0,0,5,0.875,3
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,resolve,resolve(),4,0,0,4,0,7,0,0,7,0.9857142857142858,15
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,newInstance,newInstance(),0,0,0,1,0,2,0,0,6,0.9090909090909092,3
+FixCrLfFilter.java,org.apache.tools.ant.filters,FixCrLfFilter,newInstance,newInstance(String),0,0,0,1,0,1,1,1,8,0.9666666666666668,5
+Get.java,org.apache.tools.ant.taskdefs,Get,beginDownload,beginDownload(),0,0,0,0,0,0,0,0,2,0.6666666666666666,1
+Get.java,org.apache.tools.ant.taskdefs,Get,onTick,onTick(),0,0,0,0,0,0,0,0,2,0.6666666666666666,1
+Get.java,org.apache.tools.ant.taskdefs,Get,endDownload,endDownload(),0,0,0,0,0,0,0,0,2,0.6666666666666666,1
+Get.java,org.apache.tools.ant.taskdefs,Get,beginDownload,beginDownload(),0,0,0,0,0,0,0,0,2,0.8,3
+Get.java,org.apache.tools.ant.taskdefs,Get,onTick,onTick(),0,0,0,0,0,0,0,0,2,0.8,2
+Get.java,org.apache.tools.ant.taskdefs,Get,endDownload,endDownload(),0,0,0,0,0,0,0,0,2,0.8,3
+Get.java,org.apache.tools.ant.taskdefs,Get,beginDownload,beginDownload(),0,0,0,0,0,0,0,0,6,0.9,3
+Get.java,org.apache.tools.ant.taskdefs,Get,onTick,onTick(),1,0,0,0,0,2,0,0,8,0.9642857142857144,7
+Get.java,org.apache.tools.ant.taskdefs,Get,endDownload,endDownload(),0,0,0,0,0,2,0,0,6,0.9333333333333332,4
+Ildasm.java,org.apache.tools.ant.taskdefs.optional.dotnet,Ildasm,getValues,getValues(),0,0,0,1,0,0,0,0,7,0.9473684210526316,7
+Ildasm.java,org.apache.tools.ant.taskdefs.optional.dotnet,Ildasm,getValues,getValues(),0,0,0,1,0,0,0,0,6,0.95,11
+Input.java,org.apache.tools.ant.taskdefs,Input,getInputHandler,getInputHandler(),3,0,0,3,1,5,0,0,12,0.9873417721518988,19
+Input.java,org.apache.tools.ant.taskdefs,Input,getInputHandler,getInputHandler(),0,0,0,1,0,1,0,0,6,0.9166666666666666,3
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,create,"create(Project, Object, Object)",0,0,0,1,0,0,0,3,5,0.95,4
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,create,"create(Project, Object, Object)",0,0,0,1,0,0,0,3,5,0.95,4
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,set,"set(Project, Object, String)",0,0,0,0,0,1,0,3,10,0.975,4
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,set,"set(Project, Object, String)",1,0,0,0,0,3,0,3,12,0.9848484848484848,9
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,set,"set(Project, Object, String)",0,0,0,0,0,2,0,3,12,0.981132075471698,6
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,set,"set(Project, Object, String)",0,0,0,0,1,2,0,3,11,0.9818181818181818,8
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,set,"set(Project, Object, String)",0,0,0,0,0,2,0,3,9,0.9743589743589745,4
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,set,"set(Project, Object, String)",0,0,0,0,1,3,1,3,11,0.9859154929577464,11
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,set,"set(Project, Object, String)",1,0,0,0,1,6,0,3,15,0.990990990990991,18
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,set,"set(Project, Object, String)",1,0,0,0,1,3,2,3,12,0.9902912621359224,15
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,getRealObject,getRealObject(),0,0,0,1,0,1,0,0,6,0.9090909090909092,3
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,isPolyMorphic,isPolyMorphic(),0,0,0,1,0,0,0,0,4,0.8333333333333334,3
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,getRealObject,getRealObject(),0,0,0,1,0,0,0,0,4,0.8571428571428571,3
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,create,"create(Project, Object, Object)",0,0,0,0,0,0,0,3,4,0.9565217391304348,4
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,store,"store(Object, Object)",0,0,0,0,0,0,0,2,4,0.9473684210526316,6
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,create,"create(Project, Object, Object)",0,0,0,1,0,2,0,3,7,0.9696969696969696,4
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,isPolyMorphic,isPolyMorphic(),0,0,0,1,0,0,0,0,4,0.8333333333333334,3
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,create,"create(Project, Object, Object)",3,0,0,1,0,4,0,3,14,0.99009900990099,17
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,store,"store(Object, Object)",1,0,0,0,0,1,0,2,8,0.96875,7
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,set,"set(Project, Object, String)",0,0,0,0,0,0,0,3,4,0.9545454545454546,4
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,create,"create(Project, Object, Object)",1,0,0,1,0,5,0,3,10,0.9791666666666666,7
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,getRealObject,getRealObject(),0,0,0,1,0,0,0,0,5,0.875,3
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,store,"store(Object, Object)",1,0,0,0,0,5,0,2,10,0.975609756097561,7
+IPlanetEjbc.java,org.apache.tools.ant.taskdefs.optional.ejb,IPlanetEjbc,registerDTD,"registerDTD(String, String)",0,0,0,0,0,1,0,2,6,0.9545454545454546,3
+IPlanetEjbc.java,org.apache.tools.ant.taskdefs.optional.ejb,IPlanetEjbc,getDisplayName,getDisplayName(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+IPlanetEjbc.java,org.apache.tools.ant.taskdefs.optional.ejb,IPlanetEjbc,getCmpDescriptors,getCmpDescriptors(),0,1,0,1,0,5,4,0,12,0.988095238095238,12
+IPlanetEjbc.java,org.apache.tools.ant.taskdefs.optional.ejb,IPlanetEjbc,getEjbs,getEjbs(),0,0,0,1,0,3,1,0,8,0.979591836734694,14
+IPlanetEjbc.java,org.apache.tools.ant.taskdefs.optional.ejb,IPlanetEjbc,getEjbs,getEjbs(),0,0,0,1,0,3,0,0,10,0.9615384615384616,3
+IPlanetEjbc.java,org.apache.tools.ant.taskdefs.optional.ejb,IPlanetEjbc,getDisplayName,getDisplayName(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+IPlanetEjbc.java,org.apache.tools.ant.taskdefs.optional.ejb,IPlanetEjbc,registerDTD,"registerDTD(String, String)",3,0,0,1,0,8,1,2,11,0.98989898989899,17
+IPlanetEjbc.java,org.apache.tools.ant.taskdefs.optional.ejb,IPlanetEjbc,getCmpDescriptors,getCmpDescriptors(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+IPlanetEjbc.java,org.apache.tools.ant.taskdefs.optional.ejb,IPlanetEjbc,toString,toString(),0,0,1,1,0,3,2,0,24,0.9882352941176472,18
+IPlanetEjbc.java,org.apache.tools.ant.taskdefs.optional.ejb,IPlanetEjbc,toString,toString(),0,0,0,1,0,1,0,0,5,0.8888888888888888,3
+Javac.java,org.apache.tools.ant.taskdefs,Javac,setCompiler,setCompiler(String),0,0,0,0,0,1,0,1,6,0.9375,3
+Javac.java,org.apache.tools.ant.taskdefs,Javac,setCompiler,setCompiler(String),0,0,0,0,0,1,0,1,6,0.9333333333333332,3
+Javadoc.java,org.apache.tools.ant.taskdefs,Javadoc,setName,setName(String),0,0,0,0,0,0,0,1,6,0.9375,3
+Javadoc.java,org.apache.tools.ant.taskdefs,Javadoc,getName,getName(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+Javadoc.java,org.apache.tools.ant.taskdefs,Javadoc,setName,setName(String),0,0,0,0,0,0,0,1,6,0.9375,3
+Javadoc.java,org.apache.tools.ant.taskdefs,Javadoc,getName,getName(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+Javadoc.java,org.apache.tools.ant.taskdefs,Javadoc,setName,setName(String),0,0,0,0,0,1,0,1,7,0.9444444444444444,3
+Javadoc.java,org.apache.tools.ant.taskdefs,Javadoc,getName,getName(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+Javadoc.java,org.apache.tools.ant.taskdefs,Javadoc,addPackage,addPackage(PackageName),0,0,0,0,0,1,0,1,6,0.9375,3
+Javadoc.java,org.apache.tools.ant.taskdefs,Javadoc,setName,setName(String),0,0,0,0,0,0,0,1,6,0.9375,3
+Javadoc.java,org.apache.tools.ant.taskdefs,Javadoc,addPackage,addPackage(PackageName),0,0,0,0,0,1,0,1,6,0.9375,3
+JUnitTask.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTask,getValues,getValues(),0,0,0,1,0,0,0,0,6,0.95,4
+JUnitTask.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTask,getValues,getValues(),0,0,0,1,0,0,0,0,7,0.9473684210526316,3
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,write,write(int),0,0,0,0,0,0,0,1,3,0.875,2
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,write,write(int),0,0,0,0,0,0,0,1,3,0.875,2
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,startTest,startTest(Test),0,0,0,0,0,2,1,1,8,0.9666666666666668,4
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,endTest,endTest(Test),0,0,0,0,0,2,1,1,8,0.9666666666666668,4
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,addFailure,"addFailure(Test, Throwable)",1,0,0,0,0,4,1,2,10,0.98,7
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,addFailure,"addFailure(Test, AssertionFailedError)",0,0,0,0,0,1,0,2,7,0.9565217391304348,3
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,addError,"addError(Test, Throwable)",1,0,0,0,0,4,1,2,10,0.98,7
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,addError,"addError(Test, Throwable)",0,0,0,0,0,0,0,2,4,0.9230769230769232,2
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,addFailure,"addFailure(Test, AssertionFailedError)",0,0,0,0,0,0,0,2,4,0.9230769230769232,2
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,endTest,endTest(Test),0,0,0,0,0,0,0,1,4,0.8888888888888888,2
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,startTest,startTest(Test),0,0,0,0,0,2,0,1,7,0.9444444444444444,3
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,addError,"addError(Test, Throwable)",2,0,0,0,1,11,3,2,16,0.9937106918238994,29
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,addFailure,"addFailure(Test, AssertionFailedError)",0,0,0,0,0,1,0,2,6,0.9545454545454546,3
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,addFailure,"addFailure(Test, Throwable)",1,0,0,0,0,2,0,2,9,0.9761904761904762,7
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,endTest,endTest(Test),0,0,0,0,0,1,0,1,6,0.9375,3
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,startTest,startTest(Test),0,0,0,0,0,1,0,1,6,0.9375,3
+Length.java,org.apache.tools.ant.taskdefs,Length,handle,handle(Resource),0,0,0,0,0,0,0,1,4,0.8888888888888888,1
+Length.java,org.apache.tools.ant.taskdefs,Length,complete,complete(),0,0,0,0,0,1,0,0,6,0.8888888888888888,3
+Length.java,org.apache.tools.ant.taskdefs,Length,handle,handle(Resource),1,0,0,0,0,10,1,1,8,0.9821428571428572,11
+Length.java,org.apache.tools.ant.taskdefs,Length,handle,handle(Resource),1,0,0,0,0,3,1,1,10,0.9791666666666666,8
+Length.java,org.apache.tools.ant.taskdefs,Length,complete,complete(),0,0,0,0,0,3,0,0,6,0.9333333333333332,4
+Length.java,org.apache.tools.ant.taskdefs,Length,complete,complete(),0,0,0,0,0,0,0,0,2,0.75,2
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,setName,setName(String),0,0,0,0,0,0,0,1,6,0.9375,3
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,setName,setName(String),1,0,0,0,0,2,0,1,10,0.9743589743589745,7
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,getName,getName(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,setDescription,setDescription(String),0,0,0,0,0,0,0,1,6,0.9333333333333332,3
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,getDescription,getDescription(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,equals,equals(Object),8,0,0,7,0,4,1,1,9,0.98989898989899,24
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,hashCode,hashCode(),0,0,0,1,0,2,0,0,7,0.9333333333333332,3
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,setName,setName(String),1,0,0,0,0,2,0,1,10,0.9743589743589745,7
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,getName,getName(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,setOptional,setOptional(boolean),0,0,0,0,0,0,0,1,6,0.9333333333333332,3
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,setDescription,setDescription(String),0,0,0,0,0,0,0,1,6,0.9333333333333332,3
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,getDescription,getDescription(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,equals,equals(Object),7,0,0,7,0,3,1,1,9,0.9891304347826086,23
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,hashCode,hashCode(),0,0,0,1,0,1,0,0,6,0.9,3
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,setName,setName(String),1,0,0,0,0,2,0,1,10,0.9743589743589745,7
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,getName,getName(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,setDescription,setDescription(String),0,0,0,0,0,0,0,1,6,0.9333333333333332,3
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,getDescription,getDescription(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,setOptional,setOptional(boolean),0,0,0,0,0,0,0,1,6,0.9333333333333332,3
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,equals,equals(Object),2,0,0,3,0,4,1,1,11,0.9879518072289156,13
+MacroDef.java,org.apache.tools.ant.taskdefs,MacroDef,hashCode,hashCode(),0,0,0,1,0,1,0,0,9,0.9583333333333334,4
+MacroInstance.java,org.apache.tools.ant.taskdefs,MacroInstance,addTask,addTask(Task),0,0,0,0,0,1,0,1,6,0.9375,3
+MacroInstance.java,org.apache.tools.ant.taskdefs,MacroInstance,addTask,addTask(Task),0,0,0,0,0,1,0,1,6,0.9375,3
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,hashCode,hashCode(),1,0,0,1,0,3,1,0,9,0.9722222222222222,10
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,equals,equals(Object),3,0,0,4,0,6,3,1,10,0.9903846153846154,20
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,setName,setName(String),0,0,0,0,0,0,0,1,6,0.9375,3
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,getName,getName(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,write,write(PrintWriter),0,1,0,0,0,4,1,1,10,0.9722222222222222,5
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,setName,setName(String),0,0,0,0,0,0,0,1,6,0.9375,3
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,getName,getName(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,write,write(PrintWriter),1,0,1,0,0,7,4,1,11,0.9886363636363636,13
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,addConfiguredAttribute,addConfiguredAttribute(Attribute),1,0,0,0,0,1,1,1,9,0.9722222222222222,9
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,getWarnings,getWarnings(),0,0,0,1,0,1,0,0,6,0.9090909090909092,3
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,hashCode,hashCode(),0,0,0,1,0,1,0,0,6,0.9,3
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,equals,equals(Object),2,0,0,3,0,3,1,1,8,0.981132075471698,13
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,addConfiguredAttribute,addConfiguredAttribute(Attribute),2,0,0,0,0,6,0,1,9,0.9824561403508772,11
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,write,write(PrintWriter),2,0,1,0,1,11,5,1,12,0.9935064935064936,29
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,getWarnings,getWarnings(),0,0,3,1,0,12,5,0,11,0.98989898989899,20
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,hashCode,hashCode(),1,0,0,1,0,3,1,0,9,0.9772727272727272,11
+Manifest.java,org.apache.tools.ant.taskdefs,Manifest,equals,equals(Object),6,0,0,6,0,5,1,1,9,0.9894736842105264,24
+Mapper.java,org.apache.tools.ant.types,Mapper,getImplementation,getImplementation(),5,0,0,3,1,9,2,0,12,0.9929078014184396,37
+Mapper.java,org.apache.tools.ant.types,Mapper,getImplementation,getImplementation(),0,0,0,1,0,2,0,0,6,0.9230769230769232,3
+ModifiedSelector.java,org.apache.tools.ant.types.selectors.modifiedselector,ModifiedSelector,getValues,getValues(),0,0,0,1,0,0,0,0,6,0.9285714285714286,3
+ModifiedSelector.java,org.apache.tools.ant.types.selectors.modifiedselector,ModifiedSelector,getValues,getValues(),0,0,0,1,0,0,0,0,6,0.9375,3
+ModifiedSelector.java,org.apache.tools.ant.types.selectors.modifiedselector,ModifiedSelector,getValues,getValues(),0,0,0,1,0,0,0,0,6,0.9333333333333332,3
+MSVSS.java,org.apache.tools.ant.taskdefs.optional.vss,MSVSS,getValues,getValues(),0,0,0,1,0,0,0,0,7,0.9473684210526316,3
+MSVSS.java,org.apache.tools.ant.taskdefs.optional.vss,MSVSS,getValues,getValues(),0,0,0,1,0,0,0,0,7,0.9473684210526316,3
+OutputStreamFunneler.java,org.apache.tools.ant.util,OutputStreamFunneler,close,close(),0,0,0,0,0,1,0,0,5,0.9090909090909092,3
+OutputStreamFunneler.java,org.apache.tools.ant.util,OutputStreamFunneler,close,close(),0,0,0,0,1,2,0,0,8,0.9583333333333334,8
+P4Change.java,org.apache.tools.ant.taskdefs.optional.perforce,P4Change,process,process(String),2,0,0,0,0,6,1,1,10,0.9866666666666668,15
+P4Change.java,org.apache.tools.ant.taskdefs.optional.perforce,P4Change,process,process(String),4,0,0,1,0,9,0,1,14,0.98989898989899,19
+P4Label.java,org.apache.tools.ant.taskdefs.optional.perforce,P4Label,process,process(String),0,0,0,0,0,1,0,1,7,0.9444444444444444,3
+P4Label.java,org.apache.tools.ant.taskdefs.optional.perforce,P4Label,process,process(String),0,0,0,0,0,1,0,1,7,0.9444444444444444,3
+P4Label.java,org.apache.tools.ant.taskdefs.optional.perforce,P4Label,process,process(String),1,0,0,0,0,3,0,1,9,0.9772727272727272,9
+P4Label.java,org.apache.tools.ant.taskdefs.optional.perforce,P4Label,process,process(String),0,0,0,0,0,1,0,1,7,0.9444444444444444,3
+Parallel.java,org.apache.tools.ant.taskdefs,Parallel,addTask,addTask(Task),0,0,0,0,0,1,0,1,6,0.9375,3
+Parallel.java,org.apache.tools.ant.taskdefs,Parallel,addTask,addTask(Task),0,0,0,0,0,1,0,1,6,0.9375,3
+Parallel.java,org.apache.tools.ant.taskdefs,Parallel,run,run(),0,0,0,0,1,2,0,0,10,0.9743589743589745,12
+Parallel.java,org.apache.tools.ant.taskdefs,Parallel,run,run(),1,0,0,0,1,2,0,0,11,0.9791666666666666,15
+Path.java,org.apache.tools.ant.types,Path,setLocation,setLocation(File),0,0,0,0,0,2,0,1,10,0.9583333333333334,3
+Path.java,org.apache.tools.ant.types,Path,setPath,setPath(String),0,0,0,0,0,2,0,1,7,0.9523809523809524,3
+Path.java,org.apache.tools.ant.types,Path,iterator,iterator(),0,0,0,1,0,0,0,0,6,0.9230769230769232,3
+Path.java,org.apache.tools.ant.types,Path,isFilesystemOnly,isFilesystemOnly(),0,0,0,1,0,0,0,0,4,0.8571428571428571,3
+Path.java,org.apache.tools.ant.types,Path,size,size(),0,0,0,1,0,0,0,0,7,0.9375,3
+Path.java,org.apache.tools.ant.types,Path,setLocation,setLocation(File),0,0,0,0,0,3,0,1,6,0.9523809523809524,4
+Path.java,org.apache.tools.ant.types,Path,setPath,setPath(String),0,0,0,0,0,3,0,1,6,0.9523809523809524,4
+Path.java,org.apache.tools.ant.types,Path,size,size(),1,0,0,2,0,6,0,0,10,0.9714285714285714,7
+Path.java,org.apache.tools.ant.types,Path,iterator,iterator(),1,0,0,2,0,6,0,0,10,0.9736842105263158,8
+Path.java,org.apache.tools.ant.types,Path,isFilesystemOnly,isFilesystemOnly(),1,0,0,2,0,5,0,0,10,0.9655172413793104,8
+PatternSet.java,org.apache.tools.ant.types,PatternSet,toString,toString(),4,0,0,1,0,9,2,0,10,0.9913793103448276,25
+PatternSet.java,org.apache.tools.ant.types,PatternSet,toString,toString(),0,0,0,1,0,0,0,0,9,0.9444444444444444,4
+ProcessDestroyer.java,org.apache.tools.ant.taskdefs,ProcessDestroyer,run,run(),1,0,0,0,0,1,0,0,8,0.9285714285714286,5
+ProcessDestroyer.java,org.apache.tools.ant.taskdefs,ProcessDestroyer,run,run(),0,0,1,0,0,4,1,0,13,0.975609756097561,9
+ProjectHelper2.java,org.apache.tools.ant.helper,ProjectHelper2,onStartElement,"onStartElement(String, String, String, Attributes, AntXMLContext)",0,0,0,0,0,0,0,5,4,0.9629629629629628,5
+ProjectHelper2.java,org.apache.tools.ant.helper,ProjectHelper2,onStartChild,"onStartChild(String, String, String, Attributes, AntXMLContext)",0,0,0,0,0,1,0,5,8,0.9761904761904762,7
+ProjectHelper2.java,org.apache.tools.ant.helper,ProjectHelper2,onEndElement,"onEndElement(String, String, AntXMLContext)",0,0,0,0,0,0,0,3,4,0.9411764705882352,3
+ProjectHelper2.java,org.apache.tools.ant.helper,ProjectHelper2,characters,"characters(char[], int, int, AntXMLContext)",1,0,0,0,0,3,1,4,10,0.9833333333333332,9
+ProjectHelper2.java,org.apache.tools.ant.helper,ProjectHelper2,onStartChild,"onStartChild(String, String, String, Attributes, AntXMLContext)",2,0,0,1,0,6,0,5,17,0.9910714285714286,23
+ProjectHelper2.java,org.apache.tools.ant.helper,ProjectHelper2,onStartElement,"onStartElement(String, String, String, Attributes, AntXMLContext)",19,1,0,1,0,55,10,5,16,0.99800796812749,111
+ProjectHelper2.java,org.apache.tools.ant.helper,ProjectHelper2,onStartChild,"onStartChild(String, String, String, Attributes, AntXMLContext)",1,0,0,2,0,3,0,5,9,0.9833333333333332,11
+ProjectHelper2.java,org.apache.tools.ant.helper,ProjectHelper2,onStartElement,"onStartElement(String, String, String, Attributes, AntXMLContext)",14,1,0,0,0,47,12,5,17,0.998,87
+ProjectHelper2.java,org.apache.tools.ant.helper,ProjectHelper2,onStartChild,"onStartChild(String, String, String, Attributes, AntXMLContext)",0,0,0,1,0,0,0,5,6,0.9696969696969696,6
+ProjectHelper2.java,org.apache.tools.ant.helper,ProjectHelper2,onEndElement,"onEndElement(String, String, AntXMLContext)",0,0,0,0,0,2,0,3,7,0.9615384615384616,3
+ProjectHelper2.java,org.apache.tools.ant.helper,ProjectHelper2,onStartElement,"onStartElement(String, String, String, Attributes, AntXMLContext)",7,1,0,0,0,43,12,5,15,0.997716894977169,81
+ProjectHelper2.java,org.apache.tools.ant.helper,ProjectHelper2,characters,"characters(char[], int, int, AntXMLContext)",0,0,0,0,0,2,1,4,8,0.9761904761904762,6
+ProjectHelper2.java,org.apache.tools.ant.helper,ProjectHelper2,onStartChild,"onStartChild(String, String, String, Attributes, AntXMLContext)",0,0,0,1,0,0,0,5,6,0.9696969696969696,6
+ProjectHelper2.java,org.apache.tools.ant.helper,ProjectHelper2,onEndElement,"onEndElement(String, String, AntXMLContext)",0,0,0,0,0,1,0,3,6,0.9545454545454546,3
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,startElement,"startElement(String, AttributeList)",0,0,0,0,0,0,0,2,8,0.9655172413793104,3
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,characters,"characters(char[], int, int)",1,0,0,0,0,2,1,3,10,0.9821428571428572,7
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,startElement,"startElement(String, AttributeList)",1,0,0,0,0,2,0,2,9,0.9787234042553192,8
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,init,"init(String, AttributeList)",10,1,0,0,0,23,8,2,16,0.996996996996997,58
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,startElement,"startElement(String, AttributeList)",1,0,0,0,0,3,0,2,9,0.9772727272727272,8
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,init,"init(String, AttributeList)",10,1,0,0,0,20,9,2,17,0.9968652037617556,61
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,startElement,"startElement(String, AttributeList)",0,0,0,0,0,1,0,2,6,0.9629629629629628,3
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,characters,"characters(char[], int, int)",1,0,0,0,0,3,2,3,9,0.9857142857142858,9
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,init,"init(String, AttributeList)",2,0,0,0,1,11,0,2,10,0.9926470588235294,27
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,characters,"characters(char[], int, int)",0,0,0,0,0,1,0,3,6,0.9615384615384616,3
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,startElement,"startElement(String, AttributeList)",1,0,0,0,0,2,0,2,10,0.984375,10
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,init,"init(String, AttributeList)",1,0,0,0,1,10,4,2,12,0.994186046511628,25
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,characters,"characters(char[], int, int)",0,0,0,0,0,1,0,3,6,0.9615384615384616,3
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,startElement,"startElement(String, AttributeList)",1,0,0,0,0,2,0,2,10,0.9846153846153848,11
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,init,"init(String, AttributeList)",1,0,0,0,1,4,0,2,11,0.9886363636363636,14
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,characters,"characters(char[], int, int)",0,0,0,0,0,1,0,3,6,0.9615384615384616,3
+ProjectHelperImpl.java,org.apache.tools.ant.helper,ProjectHelperImpl,startElement,"startElement(String, AttributeList)",0,0,0,0,0,1,0,2,7,0.9705882352941176,3
+PropertyFile.java,org.apache.tools.ant.taskdefs.optional,PropertyFile,checkParameters,checkParameters(),1,0,0,0,0,2,0,0,8,0.9523809523809524,5
+PropertyFile.java,org.apache.tools.ant.taskdefs.optional,PropertyFile,checkParameters,checkParameters(),4,0,0,0,0,0,0,0,10,0.9895833333333334,18
+PropertyFile.java,org.apache.tools.ant.taskdefs.optional,PropertyFile,getValues,getValues(),0,0,0,1,0,0,0,0,6,0.9375,3
+PropertyFile.java,org.apache.tools.ant.taskdefs.optional,PropertyFile,getValues,getValues(),0,0,0,1,0,0,0,0,6,0.9375,3
+PropertyFile.java,org.apache.tools.ant.taskdefs.optional,PropertyFile,getValues,getValues(),0,0,0,1,0,0,0,0,5,0.9,3
+PropertySet.java,org.apache.tools.ant.types,PropertySet,toString,toString(),0,0,0,1,0,0,0,0,12,0.9615384615384616,4
+PropertySet.java,org.apache.tools.ant.types,PropertySet,toString,toString(),1,1,0,1,0,15,4,0,11,0.9906542056074766,14
+Quantifier.java,org.apache.tools.ant.types,Quantifier,eval,"eval(int, int)",0,0,0,0,0,0,0,2,3,0.9,1
+Quantifier.java,org.apache.tools.ant.types,Quantifier,eval,"eval(int, int)",0,0,0,1,0,0,0,2,6,0.9333333333333332,1
+Quantifier.java,org.apache.tools.ant.types,Quantifier,eval,"eval(int, int)",0,0,0,1,0,0,0,2,6,0.9333333333333332,1
+Quantifier.java,org.apache.tools.ant.types,Quantifier,eval,"eval(int, int)",0,0,0,1,0,0,0,2,6,0.9333333333333332,1
+Quantifier.java,org.apache.tools.ant.types,Quantifier,eval,"eval(int, int)",0,0,0,1,0,0,0,2,6,0.9375,1
+Quantifier.java,org.apache.tools.ant.types,Quantifier,eval,"eval(int, int)",0,0,0,1,0,0,0,2,6,0.9333333333333332,1
+Replace.java,org.apache.tools.ant.taskdefs,Replace,setToken,setToken(String),0,0,0,0,0,0,0,1,6,0.9375,3
+Replace.java,org.apache.tools.ant.taskdefs,Replace,setValue,setValue(String),0,0,0,0,0,0,0,1,6,0.9375,3
+Replace.java,org.apache.tools.ant.taskdefs,Replace,getOutputBuffer,getOutputBuffer(),0,0,0,1,0,0,0,0,5,0.875,3
+Replace.java,org.apache.tools.ant.taskdefs,Replace,setInputBuffer,setInputBuffer(StringBuffer),0,0,0,0,0,0,0,1,6,0.9285714285714286,3
+Replace.java,org.apache.tools.ant.taskdefs,Replace,process,process(),1,0,0,2,0,9,1,0,12,0.9848484848484848,10
+Replace.java,org.apache.tools.ant.taskdefs,Replace,flush,flush(),0,0,0,0,0,5,0,0,7,0.9615384615384616,6
+Replace.java,org.apache.tools.ant.taskdefs,Replace,getOutputBuffer,getOutputBuffer(),0,0,0,1,0,0,0,0,5,0.875,3
+Replace.java,org.apache.tools.ant.taskdefs,Replace,close,close(),0,0,0,0,0,1,0,0,6,0.9090909090909092,3
+Replace.java,org.apache.tools.ant.taskdefs,Replace,closeQuietly,closeQuietly(),0,0,0,0,0,1,0,0,6,0.9090909090909092,3
+Replace.java,org.apache.tools.ant.taskdefs,Replace,setInputBuffer,setInputBuffer(StringBuffer),0,0,0,0,0,0,0,1,6,0.9285714285714286,3
+Replace.java,org.apache.tools.ant.taskdefs,Replace,process,process(),0,0,0,1,0,4,0,0,7,0.9629629629629628,5
+Replace.java,org.apache.tools.ant.taskdefs,Replace,flush,flush(),0,0,0,0,0,2,0,0,6,0.9285714285714286,4
+Replace.java,org.apache.tools.ant.taskdefs,Replace,close,close(),0,0,0,0,0,1,0,0,6,0.9090909090909092,3
+Replace.java,org.apache.tools.ant.taskdefs,Replace,closeQuietly,closeQuietly(),0,0,0,0,0,1,0,0,6,0.9090909090909092,3
+Replace.java,org.apache.tools.ant.taskdefs,Replace,setToken,setToken(String),0,0,0,0,0,2,0,1,6,0.9375,3
+Replace.java,org.apache.tools.ant.taskdefs,Replace,setValue,setValue(String),0,0,0,0,0,2,0,1,6,0.9375,3
+Resources.java,org.apache.tools.ant.types.resources,Resources,isFilesystemOnly,isFilesystemOnly(),0,0,0,1,0,0,0,0,4,0.8571428571428571,3
+Resources.java,org.apache.tools.ant.types.resources,Resources,iterator,iterator(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+Resources.java,org.apache.tools.ant.types.resources,Resources,size,size(),0,0,0,1,0,0,0,0,4,0.8571428571428571,3
+Resources.java,org.apache.tools.ant.types.resources,Resources,next,next(),0,0,0,0,0,0,0,0,6,0.9,3
+Resources.java,org.apache.tools.ant.types.resources,Resources,hasNext,hasNext(),0,0,0,1,0,0,0,0,4,0.8571428571428571,3
+Resources.java,org.apache.tools.ant.types.resources,Resources,remove,remove(),0,0,0,0,0,0,0,0,6,0.8888888888888888,3
+Resources.java,org.apache.tools.ant.types.resources,Resources,size,size(),0,0,0,1,0,0,0,0,5,0.875,3
+Resources.java,org.apache.tools.ant.types.resources,Resources,iterator,iterator(),0,0,0,1,0,0,0,0,6,0.9,3
+Resources.java,org.apache.tools.ant.types.resources,Resources,hasNext,hasNext(),0,0,1,1,0,5,1,0,12,0.9814814814814816,8
+Resources.java,org.apache.tools.ant.types.resources,Resources,next,next(),1,0,0,1,0,2,0,0,8,0.95,6
+Resources.java,org.apache.tools.ant.types.resources,Resources,remove,remove(),0,0,0,0,0,0,0,0,6,0.8888888888888888,3
+Resources.java,org.apache.tools.ant.types.resources,Resources,iterator,iterator(),1,0,0,2,0,5,0,0,8,0.9642857142857144,7
+Resources.java,org.apache.tools.ant.types.resources,Resources,size,size(),1,0,0,2,0,5,0,0,8,0.9565217391304348,7
+Resources.java,org.apache.tools.ant.types.resources,Resources,isFilesystemOnly,isFilesystemOnly(),2,1,0,3,0,9,1,0,13,0.98,13
+Rmic.java,org.apache.tools.ant.taskdefs,Rmic,setCompiler,setCompiler(String),1,0,0,0,0,2,0,1,8,0.9583333333333334,5
+Rmic.java,org.apache.tools.ant.taskdefs,Rmic,setCompiler,setCompiler(String),0,0,0,0,0,1,0,1,6,0.9333333333333332,3
+ScriptDef.java,org.apache.tools.ant.taskdefs.optional.script,ScriptDef,setName,setName(String),0,0,0,0,0,0,0,1,6,0.9375,3
+ScriptDef.java,org.apache.tools.ant.taskdefs.optional.script,ScriptDef,setName,setName(String),0,0,0,0,0,1,0,1,8,0.9545454545454546,3
+ScriptDef.java,org.apache.tools.ant.taskdefs.optional.script,ScriptDef,setName,setName(String),0,0,0,0,0,1,0,1,8,0.9545454545454546,3
+SQLExec.java,org.apache.tools.ant.taskdefs,SQLExec,getValues,getValues(),0,0,0,1,0,0,0,0,7,0.9411764705882352,3
+SQLExec.java,org.apache.tools.ant.taskdefs,SQLExec,setSrc,setSrc(File),0,0,0,0,0,0,0,1,6,0.9375,3
+SQLExec.java,org.apache.tools.ant.taskdefs,SQLExec,addText,addText(String),0,0,0,0,0,0,0,1,6,0.9411764705882352,5
+SQLExec.java,org.apache.tools.ant.taskdefs,SQLExec,getValues,getValues(),0,0,0,1,0,0,0,0,6,0.9375,3
+SQLExec.java,org.apache.tools.ant.taskdefs,SQLExec,setSrc,setSrc(File),1,0,0,0,0,1,0,1,9,0.9583333333333334,7
+SQLExec.java,org.apache.tools.ant.taskdefs,SQLExec,addText,addText(String),2,0,0,0,0,3,0,1,11,0.9722222222222222,8
+Tar.java,org.apache.tools.ant.taskdefs,Tar,getValues,getValues(),0,0,0,1,0,0,0,0,5,0.9,3
+Tar.java,org.apache.tools.ant.taskdefs,Tar,getValues,getValues(),0,0,0,1,0,0,0,0,7,0.9473684210526316,3
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,filter,filter(String),0,0,0,0,0,0,0,1,4,0.875,1
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,read,read(),7,1,1,2,0,11,3,0,16,0.9943502824858758,34
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,chain,chain(Reader),0,0,0,1,0,2,1,1,8,0.9824561403508772,8
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,chain,chain(Reader),1,0,0,1,0,2,1,1,9,0.9767441860465116,8
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,filter,filter(String),4,0,1,1,0,11,3,1,11,0.9927536231884058,30
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,filter,filter(String),2,0,0,2,0,1,0,1,8,0.972972972972973,9
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,setPattern,setPattern(String),0,0,0,0,0,0,0,1,6,0.9375,3
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,setReplace,setReplace(String),0,0,0,0,0,0,0,1,6,0.9375,3
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,setFlags,setFlags(String),0,0,0,0,0,0,0,1,6,0.9375,3
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,initialize,initialize(),3,0,0,1,0,5,0,0,8,0.9871794871794872,17
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,filter,filter(String),1,0,0,2,0,5,0,1,7,0.9761904761904762,9
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,setPattern,setPattern(String),0,0,0,0,0,0,0,1,6,0.9375,3
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,setReplace,setReplace(String),0,0,0,0,0,0,0,1,6,0.9375,3
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,setFlags,setFlags(String),0,0,0,0,0,0,0,1,6,0.9375,3
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,initialize,initialize(),3,0,0,2,0,5,0,0,8,0.9864864864864864,17
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,filter,filter(String),2,0,0,3,0,5,0,1,7,0.98,11
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,filter,filter(String),0,0,0,1,0,1,0,1,6,0.9333333333333332,3
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,filter,filter(String),1,0,0,2,0,2,0,1,8,0.96,6
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,filter,filter(String),1,1,0,1,0,6,3,1,10,0.9859154929577464,10
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,chain,chain(Reader),2,0,1,3,0,2,1,1,15,0.9827586206896552,19
+TokenFilter.java,org.apache.tools.ant.filters,TokenFilter,read,read(),2,0,1,2,0,2,1,0,11,0.9761904761904762,12
+Touch.java,org.apache.tools.ant.taskdefs,Touch,getPrimaryFormat,getPrimaryFormat(),0,0,0,0,0,0,0,0,3,0.75,1
+Touch.java,org.apache.tools.ant.taskdefs,Touch,getFallbackFormat,getFallbackFormat(),0,0,0,0,0,0,0,0,3,0.75,1
+Touch.java,org.apache.tools.ant.taskdefs,Touch,getPrimaryFormat,getPrimaryFormat(),0,0,0,1,0,1,0,0,7,0.9565217391304348,4
+Touch.java,org.apache.tools.ant.taskdefs,Touch,getFallbackFormat,getFallbackFormat(),0,0,0,1,0,1,0,0,7,0.9565217391304348,4
+Touch.java,org.apache.tools.ant.taskdefs,Touch,getPrimaryFormat,getPrimaryFormat(),0,0,0,1,0,0,0,0,6,0.9166666666666666,3
+Touch.java,org.apache.tools.ant.taskdefs,Touch,getFallbackFormat,getFallbackFormat(),0,0,0,1,0,0,0,0,4,0.875,3
+VerifyJar.java,org.apache.tools.ant.taskdefs,VerifyJar,toString,toString(),0,0,0,1,0,1,0,0,6,0.9090909090909092,3
+VerifyJar.java,org.apache.tools.ant.taskdefs,VerifyJar,clear,clear(),1,0,0,0,0,1,0,0,8,0.9375,5
+VerifyJar.java,org.apache.tools.ant.taskdefs,VerifyJar,toString,toString(),0,0,0,1,0,1,0,0,6,0.9090909090909092,3
+VerifyJar.java,org.apache.tools.ant.taskdefs,VerifyJar,clear,clear(),0,0,0,0,0,0,0,0,7,0.9166666666666666,3
+WsdlToDotnet.java,org.apache.tools.ant.taskdefs.optional.dotnet,WsdlToDotnet,setUrl,setUrl(String),0,0,0,0,0,1,0,1,6,0.9375,3
+WsdlToDotnet.java,org.apache.tools.ant.taskdefs.optional.dotnet,WsdlToDotnet,setMakeURL,setMakeURL(boolean),0,0,0,0,0,1,0,1,6,0.9333333333333332,3
+WsdlToDotnet.java,org.apache.tools.ant.taskdefs.optional.dotnet,WsdlToDotnet,validate,validate(),2,0,0,0,0,2,0,0,8,0.9722222222222222,11
+WsdlToDotnet.java,org.apache.tools.ant.taskdefs.optional.dotnet,WsdlToDotnet,validate,validate(),5,0,0,0,0,4,0,0,12,0.9875,17
+WsdlToDotnet.java,org.apache.tools.ant.taskdefs.optional.dotnet,WsdlToDotnet,setUrl,setUrl(String),0,0,0,0,0,0,0,1,6,0.9375,3
+WsdlToDotnet.java,org.apache.tools.ant.taskdefs.optional.dotnet,WsdlToDotnet,setMakeURL,setMakeURL(boolean),0,0,0,0,0,0,0,1,6,0.9333333333333332,3
+XMLCatalog.java,org.apache.tools.ant.types,XMLCatalog,resolveEntity,"resolveEntity(String, String)",2,0,0,2,0,8,1,2,10,0.9886363636363636,22
+XMLCatalog.java,org.apache.tools.ant.types,XMLCatalog,resolve,"resolve(String, String)",3,0,0,2,1,17,4,2,15,0.9951923076923076,44
+XMLCatalog.java,org.apache.tools.ant.types,XMLCatalog,resolveEntity,"resolveEntity(String, String)",0,0,0,0,0,0,0,2,4,0.9166666666666666,1
+XMLCatalog.java,org.apache.tools.ant.types,XMLCatalog,resolve,"resolve(String, String)",0,0,0,0,0,0,0,2,4,0.9285714285714286,1
+XMLCatalog.java,org.apache.tools.ant.types,XMLCatalog,resolveEntity,"resolveEntity(String, String)",3,0,0,1,0,7,2,2,13,0.9897959183673468,24
+XMLCatalog.java,org.apache.tools.ant.types,XMLCatalog,resolve,"resolve(String, String)",5,0,0,1,1,12,5,2,14,0.9949238578680204,54
+XMLCatalog.java,org.apache.tools.ant.types,XMLCatalog,resolveEntity,"resolveEntity(String, String)",3,0,0,1,2,9,2,2,16,0.9942196531791908,50
+XMLCatalog.java,org.apache.tools.ant.types,XMLCatalog,resolve,"resolve(String, String)",4,0,0,1,3,14,5,2,16,0.9962825278810408,78
+XMLFragment.java,org.apache.tools.ant.util,XMLFragment,addText,addText(String),0,0,0,0,0,1,0,1,6,0.9375,3
+XMLFragment.java,org.apache.tools.ant.util,XMLFragment,createDynamicElement,"createDynamicElement(String, String, String)",1,0,0,1,0,4,1,3,9,0.9852941176470588,10
+XMLFragment.java,org.apache.tools.ant.util,XMLFragment,addText,addText(String),0,0,0,0,0,1,0,1,6,0.9444444444444444,3
+XMLFragment.java,org.apache.tools.ant.util,XMLFragment,createDynamicElement,"createDynamicElement(String, String, String)",1,0,0,1,0,4,1,3,9,0.9852941176470588,10
+XMLValidateTask.java,org.apache.tools.ant.taskdefs.optional,XMLValidateTask,setName,setName(String),0,0,0,0,0,0,0,1,6,0.9333333333333332,3
+XMLValidateTask.java,org.apache.tools.ant.taskdefs.optional,XMLValidateTask,getName,getName(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+XMLValidateTask.java,org.apache.tools.ant.taskdefs.optional,XMLValidateTask,getValue,getValue(),0,0,0,1,0,0,0,0,5,0.875,3
+XMLValidateTask.java,org.apache.tools.ant.taskdefs.optional,XMLValidateTask,getName,getName(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+XMLValidateTask.java,org.apache.tools.ant.taskdefs.optional,XMLValidateTask,setName,setName(String),0,0,0,0,0,0,0,1,6,0.9375,3
+XMLValidateTask.java,org.apache.tools.ant.taskdefs.optional,XMLValidateTask,getValue,getValue(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+XSLTProcess.java,org.apache.tools.ant.taskdefs,XSLTProcess,setName,setName(String),0,0,0,0,0,0,0,1,6,0.9375,3
+XSLTProcess.java,org.apache.tools.ant.taskdefs,XSLTProcess,getName,getName(),1,0,0,1,0,0,0,0,8,0.9545454545454546,6
+XSLTProcess.java,org.apache.tools.ant.taskdefs,XSLTProcess,getName,getName(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+XSLTProcess.java,org.apache.tools.ant.taskdefs,XSLTProcess,setName,setName(String),0,0,0,0,0,0,0,1,6,0.9375,3
+XSLTProcess.java,org.apache.tools.ant.taskdefs,XSLTProcess,getValue,getValue(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+XSLTProcess.java,org.apache.tools.ant.taskdefs,XSLTProcess,getName,getName(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+XSLTProcess.java,org.apache.tools.ant.taskdefs,XSLTProcess,setName,setName(String),0,0,0,0,0,0,0,1,6,0.9375,3
+XSLTProcess.java,org.apache.tools.ant.taskdefs,XSLTProcess,getName,getName(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+XSLTProcess.java,org.apache.tools.ant.taskdefs,XSLTProcess,getValue,getValue(),0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+Zip.java,org.apache.tools.ant.taskdefs,Zip,getValues,getValues(),0,0,0,1,0,0,0,0,6,0.9375,3
+Zip.java,org.apache.tools.ant.taskdefs,Zip,getValues,getValues(),0,0,0,1,0,0,0,0,6,0.9375,3

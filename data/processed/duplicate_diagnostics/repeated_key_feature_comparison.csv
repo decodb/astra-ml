@@ -1,0 +1,392 @@
+File,Class,Method,Occurrences,SourceCSVRows,DifferentParameters,ParameterValues,DifferentASTFeatures,NumberOfDifferentASTFeatures,DifferentBugCounts,DifferentDefectiveLabels,ExactDuplicateRowsInGroup
+FixCrLfFilter.java,FixCrLfFilter,read,10,"3055, 3068, 3075, 3076, 3078, 3079, 3080, 3081, 3082, 3083",True,"0, 1, 3","If, For, While, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",10,False,False,0
+Touch.java,Touch,touch,4,"7297, 7298, 7300, 7301",True,"0, 1, 2","If, For, While, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",10,False,False,0
+JUnitTask.java,JUnitTask,execute,3,"4311, 4312, 4313",True,"0, 1","If, For, While, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",10,False,False,0
+ResourceUtils.java,ResourceUtils,copyResource,3,"6221, 6222, 6223",True,"2, 3, 9","If, While, Return, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",10,False,False,0
+ResourceUtils.java,ResourceUtils,selectOutOfDateSources,3,"6218, 6219, 6220",True,"4, 5","If, For, Return, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",10,False,False,0
+AntStructure.java,AntStructure,printElementDecl,2,"382, 388",False,4,"If, For, While, Return, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",10,False,False,0
+Available.java,Available,checkFile,2,"613, 614",True,"0, 2","If, For, While, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",10,False,False,0
+ContainsRegexpSelector.java,ContainsRegexpSelector,isSelected,2,"1619, 1620",True,"1, 3","If, While, Return, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",10,False,False,0
+ContainsSelector.java,ContainsSelector,isSelected,2,"1627, 1628",True,"1, 3","If, While, Return, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",10,False,False,0
+Exec.java,Exec,run,2,"2510, 2519",True,"0, 1","If, While, Return, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",10,False,False,0
+RuntimeConfigurable.java,RuntimeConfigurable,maybeConfigure,2,"6329, 6330",True,"1, 2","If, For, Return, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",10,False,False,0
+SQLExec.java,SQLExec,printResults,2,"6792, 6793",True,"1, 2","If, For, While, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",10,False,False,0
+SelectorUtils.java,SelectorUtils,match,2,"6551, 6552",True,"2, 3","If, For, While, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",10,False,False,0
+SelectorUtils.java,SelectorUtils,matchPath,2,"6549, 6550",True,"2, 3","If, For, While, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",10,False,False,0
+Execute.java,Execute,exec,11,"2588, 2589, 2590, 2591, 2592, 2593, 2594, 2595, 2596, 2597, 2598",True,"3, 4","If, Return, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+TokenFilter.java,TokenFilter,filter,8,"7230, 7250, 7252, 7257, 7262, 7263, 7264, 7266",False,1,"If, For, While, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",9,False,False,0
+IntrospectionHelper.java,IntrospectionHelper,create,7,"3386, 3387, 3418, 3424, 3426, 3428, 3434",True,"0, 3","If, Return, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,2
+Commandline.java,Commandline,describeArguments,4,"1342, 1344, 1346, 1347",True,"0, 1, 2","If, For, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+ComponentHelper.java,ComponentHelper,getElementName,3,"1445, 1446, 1447",True,"1, 2, 3","If, For, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+Manifest.java,Manifest,write,3,"4755, 4761, 4778",False,1,"If, For, While, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",9,False,False,0
+ModifiedSelector.java,ModifiedSelector,isSelected,3,"4904, 4905, 4906",True,"1, 3","If, Return, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+Zip.java,Zip,getResourcesToAdd,3,"7947, 7948, 7963",True,"0, 3","If, For, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+AntClassLoader.java,AntClassLoader,definePackage,2,"295, 297",True,"2, 3","If, Return, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+Commandline.java,Commandline,toString,2,"1332, 1334",True,"0, 1","If, For, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+DOMElementWriter.java,DOMElementWriter,openElement,2,"2246, 2247",True,"4, 5","If, For, While, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+DefaultCompilerAdapter.java,DefaultCompilerAdapter,executeExternalCompile,2,"1835, 1836",True,"2, 3","If, For, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+Extension.java,Extension,getExtension,2,"2717, 2719",True,"2, 3","If, For, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+Files.java,Files,hasPatterns,2,"2841, 2851",True,"0, 1","If, For, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+JakartaOroMatcher.java,JakartaOroMatcher,getGroups,2,"3558, 3559",True,"1, 2","If, For, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+JakartaRegexpMatcher.java,JakartaRegexpMatcher,getGroups,2,"3569, 3570",True,"1, 2","If, For, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+Jdk14RegexpMatcher.java,Jdk14RegexpMatcher,getGroups,2,"4097, 4098",True,"1, 2","If, For, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+LibraryDisplayer.java,LibraryDisplayer,displayLibrary,2,"4490, 4491",True,"1, 2","If, For, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+Locator.java,Locator,getLocationURLs,2,"4565, 4566",True,"1, 2","If, For, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+Move.java,Move,deleteDir,2,"4948, 4949",True,"1, 2","If, For, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+RedirectorElement.java,RedirectorElement,configure,2,"6007, 6008",True,"1, 2","If, Return, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+RegexpFactory.java,RegexpFactory,newRegexp,2,"6029, 6030",True,"0, 1","If, Return, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+RegexpMatcherFactory.java,RegexpMatcherFactory,newRegexpMatcher,2,"6038, 6039",True,"0, 1","If, Return, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+ReplaceRegExp.java,ReplaceRegExp,doReplace,2,"6122, 6123",True,"2, 4","If, Return, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+SelectorUtils.java,SelectorUtils,matchPatternStart,2,"6547, 6548",True,"2, 3","If, While, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+Tar.java,Tar,check,2,"7020, 7021",True,"1, 2","If, For, While, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+TarInputStream.java,TarInputStream,read,2,"7137, 7138",True,"0, 3","If, While, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+Tstamp.java,Tstamp,execute,2,"7344, 7354",True,"0, 3","If, While, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+Union.java,Union,getCollection,2,"7379, 7380",True,"0, 1","If, For, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+XSLTProcess.java,XSLTProcess,configureLiaison,2,"7898, 7899",False,1,"If, For, Return, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",9,False,False,0
+Zip.java,Zip,zipFile,2,"7954, 7955",True,"4, 6","If, Return, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",9,False,False,0
+FixCrLfFilter.java,FixCrLfFilter,push,5,"3062, 3063, 3064, 3065, 3066",True,"1, 3","For, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+ProjectHelperImpl.java,ProjectHelperImpl,init,5,"5676, 5679, 5683, 5686, 5689",False,2,"If, For, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",8,False,False,0
+FileUtils.java,FileUtils,isUpToDate,4,"2920, 2921, 2922, 2923",True,"2, 3","If, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+IntrospectionHelper.java,IntrospectionHelper,store,4,"3420, 3425, 3429, 3436",True,"0, 2","If, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+ProjectHelper2.java,ProjectHelper2,onStartElement,4,"5645, 5660, 5662, 5665",False,5,"If, For, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",8,False,False,0
+XMLCatalog.java,XMLCatalog,resolve,4,"7704, 7714, 7716, 7718",False,2,"If, Return, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",8,False,False,0
+XMLCatalog.java,XMLCatalog,resolveEntity,4,"7703, 7713, 7715, 7717",False,2,"If, Return, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",8,False,False,0
+AntStructure.java,AntStructure,printHead,3,"380, 385, 386",True,"3, 4","If, While, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+ClasspathUtils.java,ClasspathUtils,newInstance,3,"1274, 1275, 1287",True,"0, 2, 3","If, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+Commandline.java,Commandline,describeCommand,3,"1341, 1343, 1345",True,"0, 1","If, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+DataType.java,DataType,dieOnCircularReference,3,"1773, 1774, 1775",True,"0, 1, 2","If, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+Manifest.java,Manifest,merge,3,"4760, 4776, 4777",True,"1, 2","If, While, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+Project.java,Project,topoSort,3,"5575, 5576, 5577",True,"2, 3","If, For, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+TarOutputStream.java,TarOutputStream,write,3,"7148, 7149, 7150",True,"1, 3","If, While, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+AbstractFileSet.java,AbstractFileSet,getDirectoryScanner,2,"85, 86",True,"0, 1","If, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+AbstractFileSet.java,AbstractFileSet,setupDirectoryScanner,2,"87, 88",True,"1, 2","If, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+AntStructure.java,AntStructure,isNmtoken,2,"389, 391",False,1,"If, For, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",8,False,False,0
+AptCompilerAdapter.java,AptCompilerAdapter,setAptCommandlineSwitches,2,"475, 476",True,"1, 2","If, While, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+CollectionUtils.java,CollectionUtils,equals,2,"1301, 1302",False,2,"If, While, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",8,False,False,0
+Concat.java,Concat,read,2,"1526, 1527",True,"0, 3","If, For, Return, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+Copy.java,Copy,scan,2,"1668, 1669",True,"2, 4","If, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+DOMElementWriter.java,DOMElementWriter,write,2,"2243, 2245",True,"2, 4","If, For, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+DefaultRmicAdapter.java,DefaultRmicAdapter,setupRmicCommand,2,"1893, 1894",True,"0, 1","If, For, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+DemuxOutputStream.java,DemuxOutputStream,write,2,"2002, 2007",True,"1, 3","If, While, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+DirectoryScanner.java,DirectoryScanner,findFile,2,"2221, 2222",False,3,"If, For, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",8,False,False,0
+DirectoryScanner.java,DirectoryScanner,isSymlink,2,"2223, 2224",False,2,"If, Return, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",8,False,False,0
+FileUtils.java,FileUtils,getPath,2,"2931, 2932",True,"1, 2","If, While, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+FileUtils.java,FileUtils,readFully,2,"2908, 2909",True,"1, 2","If, While, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+FilterSet.java,FilterSet,replaceTokens,2,"2984, 2994",True,"1, 2","If, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+FormatterElement.java,FormatterElement,createFormatter,2,"3117, 3118",True,"0, 1","If, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+Java.java,Java,run,2,"3699, 3707",True,"1, 2","If, For, TryCatch, MethodCalls, Variables, Parameters, BranchingFactor, LOC",8,False,False,0
+MacroDef.java,MacroDef,sameDefinition,2,"4632, 4634",True,"1, 2","If, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+MacroDef.java,MacroDef,similar,2,"4593, 4631",False,1,"If, For, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",8,False,False,0
+MailMessage.java,MailPrintStream,write,2,"4702, 4703",True,"1, 3","If, For, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+Main.java,Main,printTargets,2,"4723, 4725",True,"2, 5","If, For, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+Mapper.java,Mapper,getImplementation,2,"4810, 4814",False,0,"If, Return, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",8,False,False,0
+P4Base.java,P4Base,execP4Command,2,"5172, 5173",True,"1, 2","If, TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+Path.java,Path,addExisting,2,"5348, 5349",True,"1, 2","If, For, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+ReaderInputStream.java,ReaderInputStream,read,2,"5896, 5897",True,"0, 3","If, While, Return, MethodCalls, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+Resources.java,Resources,isFilesystemOnly,2,"6188, 6202",False,0,"If, For, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",8,False,False,0
+Rmic.java,Rmic,isValidRmiRemote,2,"6285, 6287",False,1,"If, Return, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",8,False,False,0
+Scp.java,Scp,exactlyOne,2,"6382, 6383",True,"1, 2","If, For, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+SelectorUtils.java,SelectorUtils,tokenizePath,2,"6553, 6554",True,"1, 2","If, While, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+Sync.java,Sync,scan,2,"6985, 6986",True,"2, 4","For, While, Return, MethodCalls, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+URLResource.java,URLResource,isExists,2,"7469, 7470",True,"0, 1","If, Return, TryCatch, MethodCalls, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+XmlProperty.java,XmlProperty,addNodeRecursively,2,"7759, 7760",True,"2, 3","If, For, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+Zip.java,Zip,addResources,2,"7941, 7942",False,3,"If, Return, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",8,False,False,0
+Zip.java,Zip,zipDir,2,"7952, 7953",True,"4, 5","If, Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+ZipOutputStream.java,ZipOutputStream,write,2,"8031, 8032",True,"1, 3","If, While, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",8,False,False,0
+IntrospectionHelper.java,IntrospectionHelper,set,9,"3407, 3408, 3409, 3410, 3411, 3412, 3413, 3414, 3431",False,3,"If, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",7,False,False,0
+ClasspathUtils.java,ClasspathUtils,getClassLoaderForPath,5,"1268, 1269, 1270, 1271, 1272",True,"2, 3, 4, 5","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+Copy.java,Copy,add,4,"1658, 1660, 1676, 1677",True,"1, 3","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+DataType.java,DataType,getCheckedRef,4,"1777, 1778, 1779, 1780",True,"0, 1, 2, 3","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+JUnitTestRunner.java,JUnitTestRunner,addError,3,"4373, 4392, 4404",False,2,"If, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",7,False,False,0
+Manifest.java,Manifest,equals,3,"4745, 4772, 4782",False,1,"If, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",7,False,False,0
+ProjectHelper2.java,ProjectHelper2,characters,3,"5649, 5656, 5666",True,"3, 4","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+XMLFragment.java,XMLFragment,addText,3,"7721, 7723, 7724",True,"1, 2","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+AbstractCvsTask.java,AbstractCvsTask,addConfiguredCommandline,2,"59, 60",True,"1, 2","If, Return, MethodCalls, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+AntStructure.java,AntStructure,areNmtokens,2,"390, 392",False,1,"If, For, Return, Variables, ASTDepth, BranchingFactor, LOC",7,False,False,0
+ArchiveFileSet.java,ArchiveFileSet,getDirMode,2,"501, 509",True,"0, 1","If, Return, MethodCalls, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+ArchiveFileSet.java,ArchiveFileSet,getFileMode,2,"497, 508",True,"0, 1","If, Return, MethodCalls, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+ArchiveFileSet.java,ArchiveFileSet,getFullpath,2,"489, 507",True,"0, 1","If, Return, MethodCalls, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+ArchiveFileSet.java,ArchiveFileSet,getPrefix,2,"487, 506",True,"0, 1","If, Return, MethodCalls, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+AsiExtraField.java,AsiExtraField,getMode,2,"556, 560",True,"0, 1","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+Base64Converter.java,Base64Converter,encode,2,"620, 621",False,1,"If, While, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",7,False,False,0
+CBZip2InputStream.java,CBZip2InputStream,read,2,"825, 826",True,"0, 3","If, For, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+CBZip2OutputStream.java,CBZip2OutputStream,write,2,"853, 863",True,"1, 3","If, For, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+CRC.java,CRC,updateCRC,2,"1707, 1708",True,"1, 2","If, While, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+Commandline.java,Commandline,createArgument,2,"1323, 1324",True,"0, 1","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+ComponentHelper.java,ComponentHelper,createComponent,2,"1430, 1431",True,"1, 3","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+Continuus.java,Continuus,run,2,"1636, 1637",True,"1, 2","TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+DefaultCompilerAdapter.java,DefaultCompilerAdapter,setupJavacCommandlineSwitches,2,"1828, 1829",True,"1, 2","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+DemuxInputStream.java,DemuxInputStream,read,2,"1997, 1998",True,"0, 3","If, Return, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+Directory.java,Directory,getPath,2,"2164, 2165",True,"0, 1","While, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+ExecuteOn.java,ExecuteOn,getCommandline,2,"2637, 2638",False,2,"If, For, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",7,False,False,0
+Extension.java,Extension,addExtension,2,"2703, 2704",True,"2, 3","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+FailFast.java,FailFast,remove,2,"2764, 2768",True,"0, 1","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+FileUtils.java,FileUtils,createNewFile,2,"2910, 2911",True,"1, 2","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+FileUtils.java,FileUtils,createTempFile,2,"2903, 2904",True,"3, 4","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+IPlanetEjbc.java,IPlanetEjbc,checkConfiguration,2,"3463, 3502",True,"0, 1","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+IPlanetEjbc.java,IPlanetEjbc,registerDTD,2,"3454, 3469",False,2,"If, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",7,False,False,0
+Input.java,Input,getInputHandler,2,"3344, 3346",False,0,"If, Return, TryCatch, MethodCalls, ASTDepth, BranchingFactor, LOC",7,False,False,0
+IntrospectionHelper.java,IntrospectionHelper,getHelper,2,"3380, 3381",True,"1, 2","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+IntrospectionHelper.java,IntrospectionHelper,supportsNestedElement,2,"3392, 3393",True,"1, 2","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+JUnitTask.java,JUnitTask,actOnTestResult,2,"4339, 4340",True,"3, 4","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+Javadoc.java,Javadoc,quoteString,2,"3950, 3951",True,"1, 2","Return, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+Jdk14RegexpMatcher.java,Jdk14RegexpMatcher,matches,2,"4095, 4096",True,"1, 2","TryCatch, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+LineOrientedOutputStream.java,LineOrientedOutputStream,write,2,"4513, 4518",True,"1, 3","If, While, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+P4Change.java,P4Change,process,2,"5175, 5177",False,1,"If, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",7,False,False,0
+ProcessDestroyer.java,ProcessDestroyer,run,2,"5480, 5487",False,0,"If, While, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",7,False,False,0
+ProjectHelper.java,ProjectHelper,addText,2,"5624, 5625",True,"3, 5","If, Return, MethodCalls, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+ProjectHelper2.java,ProjectHelper2,parse,2,"5635, 5636",True,"2, 3","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+PropertySet.java,PropertySet,toString,2,"5801, 5822",False,0,"If, For, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",7,False,False,0
+Quantifier.java,Quantifier,evaluate,2,"5891, 5892",True,"1, 2","For, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+Reference.java,Reference,getReferencedObject,2,"6017, 6018",True,"0, 1","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+Replace.java,Replace,process,2,"6078, 6086",False,0,"If, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",7,False,False,0
+Scp.java,Scp,upload,2,"6375, 6376",False,2,"If, For, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",7,False,False,0
+ScriptRunnerCreator.java,ScriptRunnerCreator,createRunner,2,"6486, 6487",False,3,"If, Return, TryCatch, MethodCalls, ASTDepth, BranchingFactor, LOC",7,False,False,0
+Sort.java,Sort,add,2,"6661, 6664",False,1,"If, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",7,False,False,0
+SourceFileScanner.java,SourceFileScanner,restrict,2,"6729, 6730",True,"4, 5","For, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+SourceFileScanner.java,SourceFileScanner,restrictAsFiles,2,"6731, 6732",True,"4, 5","For, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+SubAnt.java,SubAnt,execute,2,"6903, 6904",True,"0, 2","If, MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+Symlink.java,Symlink,deleteSymlink,2,"6963, 6964",False,1,"If, TryCatch, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",7,False,False,0
+TimeComparison.java,TimeComparison,evaluate,2,"7222, 7223",True,"2, 3","If, Return, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+TokenFilter.java,TokenFilter,read,2,"7231, 7268",False,0,"If, For, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",7,False,False,0
+XSLTProcess.java,XSLTProcess,process,2,"7876, 7877",True,"3, 4","If, Return, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+ZipFile.java,ZipFile,read,2,"8006, 8007",True,"0, 3","If, Return, Variables, Parameters, ASTDepth, BranchingFactor, LOC",7,False,False,0
+ZipOutputStream.java,ZipOutputStream,toDosTime,2,"8040, 8041",False,1,"If, Return, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",7,False,False,0
+Project.java,Project,fireMessageLogged,6,"5596, 5597, 5598, 5599, 5600, 5601",True,"3, 4","MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",6,False,False,5
+JUnitTestRunner.java,JUnitTestRunner,addFailure,5,"4371, 4372, 4393, 4405, 4406",False,2,"If, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",6,False,False,0
+ProjectHelper2.java,ProjectHelper2,onStartChild,5,"5646, 5659, 5661, 5663, 5667",False,5,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",6,False,False,2
+ProjectHelperImpl.java,ProjectHelperImpl,characters,5,"5671, 5682, 5684, 5687, 5690",False,3,"If, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",6,False,False,3
+FixCrLfFilter.java,FixCrLfFilter,newInstance,4,"3088, 3089, 3094, 3095",True,"0, 1","MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",6,False,False,4
+Task.java,Task,log,4,"7184, 7185, 7186, 7187",True,"1, 2, 3","If, MethodCalls, Parameters, ASTDepth, BranchingFactor, LOC",6,False,False,0
+BuildException.java,BuildException,printStackTrace,3,"762, 763, 764",True,"0, 1","If, MethodCalls, Parameters, ASTDepth, BranchingFactor, LOC",6,False,False,2
+CollectionUtils.java,CollectionUtils,nextElement,3,"1305, 1309, 1315",False,0,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",6,False,False,0
+Length.java,Length,handle,3,"4476, 4478, 4480",False,1,"If, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",6,False,False,0
+MacroDef.java,MacroDef,equals,3,"4608, 4618, 4628",False,1,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",6,False,False,0
+Manifest.java,Manifest,hashCode,3,"4744, 4771, 4781",False,0,"If, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",6,False,False,0
+Resources.java,Resources,iterator,3,"6189, 6195, 6200",False,0,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",6,False,False,0
+Resources.java,Resources,size,3,"6190, 6194, 6201",False,0,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",6,False,False,0
+SelectorUtils.java,SelectorUtils,isOutOfDate,3,"6556, 6557, 6558",False,3,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",6,False,False,0
+Tar.java,Tar,archiveIsUpToDate,3,"7016, 7017, 7018",True,"1, 2","MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",6,False,False,0
+TokenFilter.java,TokenFilter,chain,3,"7232, 7247, 7267",False,1,"If, While, Return, ASTDepth, BranchingFactor, LOC",6,False,False,0
+ZipLong.java,ZipLong,getValue,3,"8016, 8018, 8019",True,"0, 1, 2","MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",6,False,False,0
+ZipShort.java,ZipShort,getValue,3,"8060, 8062, 8063",True,"0, 1, 2","MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",6,False,False,0
+ANTLR.java,ANTLR,setGlib,2,"336, 337",False,1,"If, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",6,False,False,0
+CommandlineJava.java,CommandlineJava,clone,2,"1354, 1390",False,0,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",6,False,False,0
+ComponentHelper.java,ComponentHelper,addDataTypeDefinition,2,"1439, 1440",True,"1, 2","MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",6,False,False,0
+DefaultCompilerAdapter.java,DefaultCompilerAdapter,setupJavacCommand,2,"1832, 1833",True,"0, 1","MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",6,False,False,0
+IPlanetEjbc.java,IPlanetEjbc,getCmpDescriptors,2,"3458, 3501",False,0,"For, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",6,False,False,0
+IPlanetEjbc.java,IPlanetEjbc,toString,2,"3507, 3513",False,0,"While, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",6,False,False,0
+JakartaOroMatcher.java,JakartaOroMatcher,matches,2,"3556, 3557",True,"1, 2","MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",6,False,False,0
+Jar.java,Jar,getManifest,2,"3581, 3583",False,1,"If, TryCatch, Variables, ASTDepth, BranchingFactor, LOC",6,False,False,0
+JavaCC.java,JavaCC,getMainClass,2,"3819, 3820",False,2,"If, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",6,False,False,0
+JspCompilerAdapterFactory.java,JspCompilerAdapterFactory,getCompiler,2,"4258, 4259",True,"2, 3","If, Return, Parameters, ASTDepth, BranchingFactor, LOC",6,False,False,0
+Manifest.java,Manifest,getWarnings,2,"4770, 4780",False,0,"While, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",6,False,False,0
+ModifiedSelector.java,ModifiedSelector,addParam,2,"4921, 4922",True,"1, 2","MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",6,False,False,0
+Path.java,Path,isFilesystemOnly,2,"5335, 5366",False,0,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",6,False,False,0
+Path.java,Path,iterator,2,"5334, 5365",False,0,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",6,False,False,0
+Path.java,Path,size,2,"5336, 5355",False,0,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",6,False,False,0
+PathConvert.java,PathConvert,add,2,"5373, 5387",False,1,"If, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",6,False,False,0
+PatternSet.java,PatternSet,toString,2,"5398, 5418",False,0,"If, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",6,False,False,0
+Project.java,Project,addOrReplaceTarget,2,"5548, 5549",True,"1, 2","MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",6,False,False,0
+ProjectComponent.java,ProjectComponent,log,2,"5614, 5615",True,"1, 2","If, MethodCalls, Parameters, ASTDepth, BranchingFactor, LOC",6,False,False,0
+ReplaceRegExp.java,ReplaceRegExp,setByLine,2,"6116, 6117",False,1,"If, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",6,False,False,0
+Resources.java,Resources,hasNext,2,"6192, 6196",False,0,"While, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",6,False,False,0
+Resources.java,Resources,next,2,"6191, 6197",False,0,"If, Return, MethodCalls, ASTDepth, BranchingFactor, LOC",6,False,False,0
+ScriptDef.java,ScriptDef,executeScript,2,"6432, 6433",True,"2, 3","If, MethodCalls, Parameters, ASTDepth, BranchingFactor, LOC",6,False,False,0
+TraXLiaison.java,TraXLiaison,setStylesheet,2,"7320, 7321",False,1,"If, MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",6,False,False,0
+ZipLong.java,ZipLong,getBytes,2,"8015, 8017",True,"0, 1","MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor, LOC",6,False,False,0
+ZipOutputStream.java,ZipOutputStream,writeOut,2,"8043, 8044",True,"1, 3","If, MethodCalls, Parameters, ASTDepth, BranchingFactor, LOC",6,False,False,0
+ProjectHelperImpl.java,ProjectHelperImpl,startElement,7,"5670, 5674, 5677, 5680, 5685, 5688, 5691",False,2,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,0
+MacroDef.java,MacroDef,setName,4,"4585, 4602, 4610, 4620",False,1,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,3
+P4Label.java,P4Label,process,4,"5236, 5237, 5238, 5239",False,1,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,3
+Get.java,Get,onTick,3,"3200, 3203, 3206",False,0,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,0
+JUnitTestRunner.java,JUnitTestRunner,endTest,3,"4369, 4394, 4407",False,1,"MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",5,False,False,0
+JUnitTestRunner.java,JUnitTestRunner,startTest,3,"4368, 4395, 4408",False,1,"MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",5,False,False,0
+JakartaRegexpMatcher.java,JakartaRegexpMatcher,matches,3,"3566, 3567, 3568",True,"1, 2","MethodCalls, Parameters, ASTDepth, BranchingFactor, LOC",5,False,False,0
+LazyFileOutputStream.java,LazyFileOutputStream,write,3,"4441, 4442, 4443",True,"1, 3","MethodCalls, Parameters, ASTDepth, BranchingFactor, LOC",5,False,False,0
+Touch.java,Touch,getFallbackFormat,3,"7279, 7281, 7289",False,0,"Return, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,0
+Touch.java,Touch,getPrimaryFormat,3,"7278, 7280, 7288",False,0,"Return, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,0
+AntSoundPlayer.java,AntSoundPlayer,playClip,2,"367, 368",False,2,"While, TryCatch, ASTDepth, BranchingFactor, LOC",5,False,False,0
+Checksum.java,Checksum,add,2,"1184, 1198",False,1,"If, Return, ASTDepth, BranchingFactor, LOC",5,False,False,0
+CommandlineJava.java,CommandlineJava,size,2,"1351, 1382",False,0,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,0
+Copy.java,Copy,buildMap,2,"1670, 1671",True,"3, 5","Return, Variables, Parameters, BranchingFactor, LOC",5,False,False,0
+DateUtils.java,DateUtils,format,2,"1814, 1815",False,2,"MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",5,False,False,0
+Delete.java,Delete,add,2,"1958, 1987",False,1,"If, Return, ASTDepth, BranchingFactor, LOC",5,False,False,0
+DotnetCompile.java,DotnetCompile,setTargetType,2,"2304, 2305",False,1,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,0
+Execute.java,Execute,isFailure,2,"2581, 2582",True,"0, 1","MethodCalls, Parameters, ASTDepth, BranchingFactor, LOC",5,False,False,0
+ExecuteOn.java,ExecuteOn,add,2,"2617, 2632",False,1,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,0
+FixCrLfFilter.java,FixCrLfFilter,resolve,2,"3087, 3093",False,0,"If, Return, MethodCalls, BranchingFactor, LOC",5,False,False,0
+Ilasm.java,Ilasm,setTargetType,2,"3270, 3293",False,1,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,0
+Length.java,Length,add,2,"4460, 4461",False,1,"If, Return, ASTDepth, BranchingFactor, LOC",5,False,False,0
+Manifest.java,Manifest,addConfiguredAttribute,2,"4766, 4775",False,1,"If, MethodCalls, Variables, BranchingFactor, LOC",5,False,False,0
+OutputStreamFunneler.java,OutputStreamFunneler,close,2,"5149, 5153",False,0,"TryCatch, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,0
+Pack.java,Pack,zipFile,2,"5283, 5284",False,2,"MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",5,False,False,0
+Path.java,Path,add,2,"5344, 5345",False,1,"Return, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,0
+PathConvert.java,PathConvert,setTargetos,2,"5376, 5377",False,1,"MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",5,False,False,0
+Project.java,Project,addTarget,2,"5546, 5547",True,"1, 2","If, Parameters, ASTDepth, BranchingFactor, LOC",5,False,False,0
+ProjectHelper.java,ProjectHelper,replaceProperties,2,"5627, 5628",True,"2, 3","MethodCalls, Variables, Parameters, ASTDepth, BranchingFactor",5,False,False,0
+PropertyFile.java,PropertyFile,checkParameters,2,"5739, 5755",False,0,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,0
+PumpStreamHandler.java,PumpStreamHandler,createPump,2,"5844, 5845",True,"2, 3","Variables, Parameters, ASTDepth, BranchingFactor, LOC",5,False,False,0
+Restrict.java,Restrict,add,2,"6231, 6234",False,1,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,0
+Rmic.java,Rmic,setCompiler,2,"6278, 6289",False,1,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,0
+SQLExec.java,SQLExec,addText,2,"6774, 6798",False,1,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,0
+SQLExec.java,SQLExec,setSrc,2,"6771, 6796",False,1,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,0
+ScriptSelector.java,ScriptSelector,isSelected,2,"6513, 6517",True,"0, 3","MethodCalls, Parameters, ASTDepth, BranchingFactor, LOC",5,False,False,0
+TarEntry.java,TarEntry,equals,2,"7054, 7055",False,1,"If, Return, ASTDepth, BranchingFactor, LOC",5,False,False,0
+TimeComparison.java,TimeComparison,compare,2,"7224, 7225",True,"2, 3","Variables, Parameters, ASTDepth, BranchingFactor, LOC",5,False,False,0
+TokenFilter.java,TokenFilter,add,2,"7237, 7245",False,1,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,0
+Tstamp.java,Tstamp,setUnit,2,"7352, 7353",False,1,"MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",5,False,False,0
+VerifyJar.java,VerifyJar,clear,2,"7495, 7499",False,0,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,0
+WsdlToDotnet.java,WsdlToDotnet,validate,2,"7662, 7665",False,0,"If, MethodCalls, ASTDepth, BranchingFactor, LOC",5,False,False,0
+XSLTProcess.java,XSLTProcess,add,2,"7852, 7855",False,1,"MethodCalls, Variables, ASTDepth, BranchingFactor, LOC",5,False,False,0
+ZipEntry.java,ZipEntry,setExtra,2,"7978, 7979",True,"0, 1","TryCatch, Parameters, ASTDepth, BranchingFactor, LOC",5,False,False,0
+jlink.java,jlink,calcChecksum,2,"4157, 4158",False,1,"While, MethodCalls, Variables, BranchingFactor, LOC",5,False,False,0
+FileUtils.java,FileUtils,copyFile,14,"2881, 2882, 2883, 2884, 2885, 2886, 2887, 2888, 2889, 2890, 2891, 2892, 2893, 2894",True,"2, 3, 4, 5, 6, 8, 9","Parameters, ASTDepth, BranchingFactor, LOC",4,False,False,0
+Project.java,Project,copyFile,8,"5565, 5566, 5567, 5568, 5569, 5570, 5571, 5572",True,"2, 3, 4, 5","Parameters, ASTDepth, BranchingFactor, LOC",4,False,False,6
+XSLTProcess.java,XSLTProcess,getName,4,"7887, 7893, 7902, 7906",False,0,"If, ASTDepth, BranchingFactor, LOC",4,False,False,3
+Assertions.java,Assertions,getCommandPrefix,3,"577, 579, 580",False,0,"Return, ASTDepth, BranchingFactor, LOC",4,False,False,2
+DefaultJspCompilerAdapter.java,DefaultJspCompilerAdapter,addArg,3,"1860, 1861, 1862",True,"2, 3","MethodCalls, Parameters, BranchingFactor, LOC",4,False,False,2
+Get.java,Get,endDownload,3,"3201, 3204, 3207",False,0,"MethodCalls, ASTDepth, BranchingFactor, LOC",4,False,False,0
+Length.java,Length,complete,3,"4477, 4481, 4482",False,0,"MethodCalls, ASTDepth, BranchingFactor, LOC",4,False,False,0
+MacroDef.java,MacroDef,hashCode,3,"4609, 4619, 4629",False,0,"MethodCalls, ASTDepth, BranchingFactor, LOC",4,False,False,0
+AbstractCvsTask.java,AbstractCvsTask,addCommandArgument,2,"45, 46",True,"1, 2","MethodCalls, Parameters, ASTDepth, BranchingFactor",4,False,False,0
+AbstractFileSet.java,AbstractFileSet,getDir,2,"65, 66",True,"0, 1","MethodCalls, Parameters, ASTDepth, BranchingFactor",4,False,False,0
+AntStructure.java,AntStructure,printTail,2,"383, 384",False,1,"MethodCalls, ASTDepth, BranchingFactor, LOC",4,False,False,0
+AntStructure.java,AntStructure,printTargetDecl,2,"381, 387",False,1,"MethodCalls, ASTDepth, BranchingFactor, LOC",4,False,False,0
+ArchiveFileSet.java,ArchiveFileSet,getSrc,2,"484, 485",True,"0, 1","MethodCalls, Parameters, ASTDepth, BranchingFactor",4,False,False,0
+ArchiveScanner.java,ArchiveScanner,setSrc,2,"528, 529",False,1,"If, ASTDepth, BranchingFactor, LOC",4,False,False,0
+Available.java,Available,setType,2,"608, 609",False,1,"MethodCalls, ASTDepth, BranchingFactor, LOC",4,False,False,0
+BZip2Resource.java,BZip2Resource,wrapStream,2,"786, 787",False,1,"If, ASTDepth, BranchingFactor, LOC",4,False,False,0
+CBZip2OutputStream.java,CBZip2OutputStream,hbMakeCodeLengths,2,"850, 851",True,"4, 5","Parameters, ASTDepth, BranchingFactor, LOC",4,False,False,0
+CommandlineJava.java,CommandlineJava,addSysproperties,2,"1356, 1362",False,1,"MethodCalls, ASTDepth, BranchingFactor, LOC",4,False,False,0
+ComponentHelper.java,ComponentHelper,getDefinition,2,"1433, 1462",False,1,"MethodCalls, ASTDepth, BranchingFactor, LOC",4,False,False,0
+Concat.java,Concat,addText,2,"1503, 1520",False,1,"If, ASTDepth, BranchingFactor, LOC",4,False,False,0
+Concat.java,Concat,setEncoding,2,"1495, 1518",False,1,"If, ASTDepth, BranchingFactor, LOC",4,False,False,0
+Delete.java,Delete,handle,2,"1989, 1990",False,1,"If, ASTDepth, BranchingFactor, LOC",4,False,False,0
+DirectoryScanner.java,DirectoryScanner,setBasedir,2,"2179, 2180",False,1,"MethodCalls, ASTDepth, BranchingFactor, LOC",4,False,False,0
+FileUtils.java,FileUtils,contentEquals,2,"2905, 2906",True,"2, 3","Parameters, ASTDepth, BranchingFactor, LOC",4,False,False,0
+IPlanetEjbc.java,IPlanetEjbc,getEjbs,2,"3464, 3467",False,0,"Variables, ASTDepth, BranchingFactor, LOC",4,False,False,0
+Length.java,Length,getLength,2,"4473, 4483",True,"0, 2","MethodCalls, Parameters, ASTDepth, BranchingFactor",4,False,False,0
+Parallel.java,Parallel,run,2,"5302, 5304",False,0,"If, ASTDepth, BranchingFactor, LOC",4,False,False,0
+Path.java,Path,setLocation,2,"5331, 5337",False,1,"MethodCalls, ASTDepth, BranchingFactor, LOC",4,False,False,0
+Project.java,Project,createClassLoader,2,"5497, 5498",True,"1, 2","MethodCalls, Parameters, ASTDepth, BranchingFactor",4,False,False,0
+Replace.java,Replace,flush,2,"6079, 6087",False,0,"MethodCalls, ASTDepth, BranchingFactor, LOC",4,False,False,0
+RuntimeConfigurable.java,RuntimeConfigurable,addText,2,"6324, 6325",True,"1, 3","MethodCalls, Parameters, ASTDepth, BranchingFactor",4,False,False,0
+SummaryJUnitResultFormatter.java,SummaryJUnitResultFormatter,addFailure,2,"6936, 6937",False,2,"MethodCalls, ASTDepth, BranchingFactor, LOC",4,False,False,0
+Tar.java,Tar,setLongfile,2,"7010, 7011",False,1,"MethodCalls, ASTDepth, BranchingFactor, LOC",4,False,False,0
+Touch.java,Touch,add,2,"7291, 7294",False,1,"If, ASTDepth, BranchingFactor, LOC",4,False,False,0
+Tstamp.java,Tstamp,setProperty,2,"7346, 7347",True,"1, 2","MethodCalls, Parameters, ASTDepth, BranchingFactor",4,False,False,0
+Unpack.java,Unpack,setDest,2,"7413, 7417",False,1,"MethodCalls, ASTDepth, BranchingFactor, LOC",4,False,False,0
+Project.java,Project,log,7,"5504, 5505, 5506, 5507, 5508, 5509, 5510",True,"1, 2, 3, 4","Parameters, BranchingFactor, LOC",3,False,False,3
+Quantifier.java,Quantifier,eval,6,"5884, 5885, 5886, 5887, 5888, 5889",False,2,"Return, ASTDepth, BranchingFactor",3,False,False,4
+Javadoc.java,Javadoc,setName,4,"3827, 3831, 3839, 3926",False,1,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,3
+Assertions.java,Assertions,applyAssertions,3,"568, 569, 570",False,1,"MethodCalls, BranchingFactor, LOC",3,False,False,0
+CollectionUtils.java,CollectionUtils,hasMoreElements,3,"1304, 1308, 1314",False,0,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+Get.java,Get,beginDownload,3,"3199, 3202, 3205",False,0,"ASTDepth, BranchingFactor, LOC",3,False,False,0
+IntrospectionHelper.java,IntrospectionHelper,getRealObject,3,"3419, 3423, 3435",False,0,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+ProjectHelper2.java,ProjectHelper2,onEndElement,3,"5648, 5664, 5668",False,3,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+ReflectUtil.java,ReflectUtil,invoke,3,"6019, 6020, 6021",True,"2, 4, 6","Parameters, BranchingFactor, LOC",3,False,False,0
+ReflectWrapper.java,ReflectWrapper,invoke,3,"6025, 6026, 6027",True,"1, 3, 5","Parameters, BranchingFactor, LOC",3,False,False,0
+ScriptDef.java,ScriptDef,setName,3,"6422, 6424, 6426",False,1,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,2
+AbstractSshMessage.java,AbstractSshMessage,log,2,"194, 201",False,1,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+Copy.java,Copy,setPreserveLastModified,2,"1644, 1645",False,1,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+DateSelector.java,DateSelector,setWhen,2,"1808, 1809",False,1,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+DirectoryScanner.java,DirectoryScanner,match,2,"2173, 2174",True,"2, 3","Parameters, BranchingFactor, LOC",3,False,False,0
+DirectoryScanner.java,DirectoryScanner,matchPath,2,"2171, 2172",True,"2, 3","Parameters, BranchingFactor, LOC",3,False,False,0
+DirectoryScanner.java,DirectoryScanner,matchPatternStart,2,"2169, 2170",True,"2, 3","Parameters, BranchingFactor, LOC",3,False,False,0
+ExecTask.java,ExecTask,setTimeout,2,"2521, 2522",False,1,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+Expand.java,Expand,add,2,"2685, 2687",False,1,"MethodCalls, BranchingFactor, LOC",3,False,False,0
+FilterSet.java,FilterSet,addFilter,2,"2985, 2987",True,"1, 2","Parameters, BranchingFactor, LOC",3,False,False,0
+FixCRLF.java,FixCRLF,getState,2,"3021, 3043",False,0,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+IPlanetEjbc.java,IPlanetEjbc,setCmp,2,"3491, 3492",False,1,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+IPlanetEjbc.java,IPlanetEjbc,setHasession,2,"3497, 3498",False,1,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+IPlanetEjbc.java,IPlanetEjbc,setHome,2,"3477, 3478",False,1,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+IPlanetEjbc.java,IPlanetEjbc,setIiop,2,"3494, 3495",False,1,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+IPlanetEjbc.java,IPlanetEjbc,setImplementation,2,"3483, 3484",False,1,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+IPlanetEjbc.java,IPlanetEjbc,setPrimaryKey,2,"3486, 3487",False,1,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+IPlanetEjbc.java,IPlanetEjbc,setRemote,2,"3480, 3481",False,1,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+Ildasm.java,Ildasm,getValues,2,"3320, 3322",False,0,"ASTDepth, BranchingFactor, LOC",3,False,False,0
+JUnitTask.java,JUnitTask,getValues,2,"4282, 4337",False,0,"ASTDepth, BranchingFactor, LOC",3,False,False,0
+Length.java,Length,setWhen,2,"4463, 4464",False,1,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+Path.java,Path,concatSystemClasspath,2,"5359, 5360",True,"0, 1","Parameters, ASTDepth, BranchingFactor",3,False,False,0
+Path.java,Path,setPath,2,"5332, 5338",False,1,"MethodCalls, ASTDepth, LOC",3,False,False,0
+Redirector.java,Redirector,setError,2,"5962, 5963",False,1,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+Redirector.java,Redirector,setInput,2,"5950, 5951",False,1,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+Redirector.java,Redirector,setOutput,2,"5955, 5956",False,1,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+RegularExpression.java,RegularExpression,setPattern,2,"6052, 6053",True,"0, 1","Parameters, BranchingFactor, LOC",3,False,False,0
+TarBuffer.java,TarBuffer,writeRecord,2,"7049, 7050",True,"1, 2","Parameters, ASTDepth, BranchingFactor",3,False,False,0
+TarEntry.java,TarEntry,setModTime,2,"7072, 7073",False,1,"MethodCalls, ASTDepth, BranchingFactor",3,False,False,0
+Unpack.java,Unpack,setSrc,2,"7412, 7414",False,1,"MethodCalls, BranchingFactor, LOC",3,False,False,0
+XMLValidateTask.java,XMLValidateTask,init,2,"7811, 7825",True,"0, 1","MethodCalls, Parameters, BranchingFactor",3,False,False,0
+OutputStreamFunneler.java,OutputStreamFunneler,write,3,"5146, 5147, 5148",True,"1, 3","Parameters, BranchingFactor",2,False,False,0
+PropertyFile.java,PropertyFile,getValues,3,"5757, 5759, 5762",False,0,"ASTDepth, BranchingFactor",2,False,False,2
+TeeOutputStream.java,TeeOutputStream,write,3,"7211, 7212, 7213",True,"1, 3","Parameters, BranchingFactor",2,False,False,0
+BriefJUnitResultFormatter.java,BriefJUnitResultFormatter,addFailure,2,"744, 745",False,2,"ASTDepth, BranchingFactor",2,False,False,0
+CVSEntry.java,CVSEntry,addFile,2,"1731, 1732",True,"2, 3","Parameters, BranchingFactor",2,False,False,0
+Definer.java,Definer,getValues,2,"1914, 1915",False,0,"ASTDepth, BranchingFactor",2,False,False,0
+EjbJar.java,EjbJar,getValues,2,"2407, 2408",False,0,"BranchingFactor, LOC",2,False,False,0
+FixCRLF.java,FixCRLF,getValues,2,"3044, 3045",False,0,"BranchingFactor, LOC",2,False,False,0
+FixCRLF.java,FixCRLF,substring,2,"3040, 3041",True,"1, 2","Parameters, BranchingFactor",2,False,False,0
+FixCrLfFilter.java,FixCrLfFilter,editsBlocked,2,"3067, 3077",False,0,"ASTDepth, BranchingFactor",2,False,False,0
+JUnitTestRunner.java,JUnitTestRunner,addFormatter,2,"4383, 4384",False,1,"ASTDepth, BranchingFactor",2,False,False,0
+LogOutputStream.java,LogOutputStream,processLine,2,"4579, 4580",True,"1, 2","Parameters, BranchingFactor",2,False,False,0
+NetCommand.java,NetCommand,addArgument,2,"5104, 5106",True,"1, 2","Parameters, BranchingFactor",2,False,False,0
+PlainJUnitResultFormatter.java,PlainJUnitResultFormatter,addFailure,2,"5444, 5445",False,2,"ASTDepth, BranchingFactor",2,False,False,0
+Project.java,Project,resolveFile,2,"5562, 5563",True,"1, 2","Parameters, BranchingFactor",2,False,False,0
+RegexpMatcher.java,RegexpMatcher,getGroups,2,"6035, 6037",True,"1, 2","Parameters, BranchingFactor",2,False,False,0
+RegexpMatcher.java,RegexpMatcher,matches,2,"6034, 6036",True,"1, 2","Parameters, BranchingFactor",2,False,False,0
+SQLExec.java,SQLExec,getValues,2,"6770, 6795",False,0,"ASTDepth, BranchingFactor",2,False,False,0
+SSHUserInfo.java,SSHUserInfo,getPassphrase,2,"6827, 6836",True,"0, 1","Parameters, BranchingFactor",2,False,False,0
+Tar.java,Tar,getValues,2,"7031, 7037",False,0,"ASTDepth, BranchingFactor",2,False,False,0
+TokenFilter.java,TokenFilter,initialize,2,"7256, 7261",False,0,"Return, BranchingFactor",2,False,False,0
+XMLJUnitResultFormatter.java,XMLJUnitResultFormatter,addFailure,2,"7736, 7737",False,2,"ASTDepth, BranchingFactor",2,False,False,0
+ZipShort.java,ZipShort,getBytes,2,"8059, 8061",True,"0, 1","Parameters, BranchingFactor",2,False,False,0
+ModifiedSelector.java,ModifiedSelector,getValues,3,"4936, 4939, 4942",False,0,BranchingFactor,1,False,False,0
+FixCRLF.java,FixCRLF,setState,2,"3022, 3042",False,1,MethodCalls,1,False,False,0
+FixCrLfFilter.java,FixCrLfFilter,equals,2,"3085, 3091",False,1,LOC,1,False,False,0
+FixCrLfFilter.java,FixCrLfFilter,getValues,2,"3084, 3090",False,0,BranchingFactor,1,False,False,0
+Javac.java,Javac,setCompiler,2,"3784, 3789",False,1,BranchingFactor,1,False,False,0
+Replace.java,Replace,setToken,2,"6070, 6103",False,1,MethodCalls,1,False,False,0
+Replace.java,Replace,setValue,2,"6072, 6104",False,1,MethodCalls,1,False,False,0
+TraXLiaison.java,TraXLiaison,getSource,2,"7323, 7324",False,2,LOC,1,False,False,0
+WsdlToDotnet.java,WsdlToDotnet,setMakeURL,2,"7660, 7672",False,1,MethodCalls,1,False,False,0
+WsdlToDotnet.java,WsdlToDotnet,setUrl,2,"7650, 7670",False,1,MethodCalls,1,False,False,0
+XMLValidateTask.java,XMLValidateTask,getValue,2,"7835, 7838",False,0,BranchingFactor,1,False,False,0
+XMLValidateTask.java,XMLValidateTask,setName,2,"7832, 7837",False,1,BranchingFactor,1,False,False,0
+XMLValidateTask.java,XMLValidateTask,setValue,2,"7833, 7839",False,1,BranchingFactor,1,False,False,0
+FileUtils.java,FileUtils,close,4,"2924, 2925, 2926, 2927",False,1,,0,False,False,4
+Javadoc.java,Javadoc,getName,3,"3828, 3832, 3840",False,0,,0,False,False,3
+MacroDef.java,MacroDef,getDescription,3,"4607, 4617, 4623",False,0,,0,False,False,3
+MacroDef.java,MacroDef,getName,3,"4603, 4611, 4621",False,0,,0,False,False,3
+MacroDef.java,MacroDef,setDescription,3,"4606, 4616, 4622",False,1,,0,False,False,3
+XSLTProcess.java,XSLTProcess,setName,3,"7885, 7894, 7903",False,1,,0,False,False,3
+CommandlineJava.java,CommandlineJava,addSyspropertyset,2,"1355, 1361",False,1,,0,False,False,2
+CompressedResource.java,CompressedResource,wrapStream,2,"1488, 1489",False,1,,0,False,False,2
+FileScanner.java,FileScanner,setBasedir,2,"2861, 2862",False,1,,0,False,False,2
+FixCrLfFilter.java,FixCrLfFilter,hashCode,2,"3086, 3092",False,0,,0,False,False,2
+GZipResource.java,GZipResource,wrapStream,2,"3221, 3222",False,1,,0,False,False,2
+IPlanetEjbc.java,IPlanetEjbc,getDisplayName,2,"3457, 3468",False,0,,0,False,False,2
+IntrospectionHelper.java,IntrospectionHelper,isPolyMorphic,2,"3422, 3427",False,0,,0,False,False,2
+JUnitTestRunner.java,JUnitTestRunner,write,2,"4365, 4366",False,1,,0,False,False,2
+Javadoc.java,Javadoc,addPackage,2,"3863, 3935",False,1,,0,False,False,2
+Javadoc.java,Javadoc,setExtdirs,2,"3884, 3885",False,1,,0,False,False,2
+MSVSS.java,MSVSS,getValues,2,"5005, 5006",False,0,,0,False,False,2
+MacroDef.java,MacroDef,setOptional,2,"4612, 4624",False,1,,0,False,False,2
+MacroInstance.java,MacroInstance,addTask,2,"4642, 4644",False,1,,0,False,False,2
+Manifest.java,Manifest,getName,2,"4748, 4758",False,0,,0,False,False,2
+Manifest.java,Manifest,setName,2,"4747, 4757",False,1,,0,False,False,2
+Parallel.java,Parallel,addTask,2,"5290, 5294",False,1,,0,False,False,2
+Replace.java,Replace,close,2,"6083, 6088",False,0,,0,False,False,2
+Replace.java,Replace,closeQuietly,2,"6084, 6089",False,0,,0,False,False,2
+Replace.java,Replace,getOutputBuffer,2,"6076, 6081",False,0,,0,False,False,2
+Replace.java,Replace,setInputBuffer,2,"6077, 6085",False,1,,0,False,False,2
+Resources.java,Resources,remove,2,"6193, 6198",False,0,,0,False,False,2
+Target.java,Target,replaceChild,2,"7124, 7125",False,2,,0,False,False,2
+TokenFilter.java,TokenFilter,setFlags,2,"7255, 7260",False,1,,0,False,False,2
+TokenFilter.java,TokenFilter,setPattern,2,"7253, 7258",False,1,,0,False,False,2
+TokenFilter.java,TokenFilter,setReplace,2,"7254, 7259",False,1,,0,False,False,2
+VerifyJar.java,VerifyJar,toString,2,"7494, 7498",False,0,,0,False,False,2
+XMLFragment.java,XMLFragment,createDynamicElement,2,"7722, 7726",False,3,,0,False,False,2
+XMLValidateTask.java,XMLValidateTask,getName,2,"7834, 7836",False,0,,0,False,False,2
+XSLTProcess.java,XSLTProcess,getValue,2,"7895, 7907",False,0,,0,False,False,2
+Zip.java,Zip,getValues,2,"7928, 7961",False,0,,0,False,False,2

@@ -1,0 +1,49 @@
+File,Package,Class,DeclaringType,Method,MethodSignature,StartLine,EndLine,If,For,While,Return,TryCatch,MethodCalls,Variables,Parameters,ASTDepth,BranchingFactor,LOC
+AbstractSshMessage.java,org.apache.tools.ant.taskdefs.optional.ssh,AbstractSshMessage,AbstractSshMessage,log,log(String),43,45,0,0,0,0,0,0,0,1,4,0.9,3
+AbstractSshMessage.java,org.apache.tools.ant.taskdefs.optional.ssh,AbstractSshMessage,AbstractSshMessage,log,log(String),162,164,0,0,0,0,0,1,0,1,6,0.9375,3
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,IntrospectionHelper,create,"create(Project, Object, Object)",505,508,0,0,0,1,0,0,0,3,5,0.95,4
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,IntrospectionHelper,create,"create(Project, Object, Object)",518,521,0,0,0,1,0,0,0,3,5,0.95,4
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,IntrospectionHelper,create,"create(Project, Object, Object)",1387,1393,1,0,0,1,0,5,0,3,10,0.9791666666666666,7
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,IntrospectionHelper,set,"set(Project, Object, String)",947,950,0,0,0,0,0,1,0,3,10,0.975,4
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,IntrospectionHelper,set,"set(Project, Object, String)",955,963,1,0,0,0,0,3,0,3,12,0.9848484848484848,9
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,IntrospectionHelper,set,"set(Project, Object, String)",969,974,0,0,0,0,0,2,0,3,12,0.981132075471698,6
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,IntrospectionHelper,set,"set(Project, Object, String)",979,986,0,0,0,0,1,2,0,3,11,0.9818181818181818,8
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,IntrospectionHelper,set,"set(Project, Object, String)",991,994,0,0,0,0,0,2,0,3,9,0.9743589743589745,4
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,IntrospectionHelper,set,"set(Project, Object, String)",999,1009,0,0,0,0,1,3,1,3,11,0.9859154929577464,11
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,IntrospectionHelper,set,"set(Project, Object, String)",1014,1031,1,0,0,0,1,6,0,3,15,0.990990990990991,18
+IntrospectionHelper.java,org.apache.tools.ant,IntrospectionHelper,IntrospectionHelper,set,"set(Project, Object, String)",1058,1072,1,0,0,0,1,3,2,3,12,0.9902912621359224,15
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,JUnitTestRunner,addError,"addError(Test, Throwable)",535,541,1,0,0,0,0,4,1,2,10,0.98,7
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,JUnitTestRunner,addError,"addError(Test, Throwable)",797,798,0,0,0,0,0,0,0,2,4,0.9230769230769232,2
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,JUnitTestRunner,addError,"addError(Test, Throwable)",962,990,2,0,0,0,1,11,3,2,16,0.9937106918238994,29
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,JUnitTestRunner,addFailure,"addFailure(Test, AssertionFailedError)",524,526,0,0,0,0,0,1,0,2,7,0.9565217391304348,3
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,JUnitTestRunner,addFailure,"addFailure(Test, AssertionFailedError)",800,801,0,0,0,0,0,0,0,2,4,0.9230769230769232,2
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,JUnitTestRunner,addFailure,"addFailure(Test, AssertionFailedError)",991,993,0,0,0,0,0,1,0,2,6,0.9545454545454546,3
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,JUnitTestRunner,addFailure,"addFailure(Test, Throwable)",509,515,1,0,0,0,0,4,1,2,10,0.98,7
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,JUnitTestRunner,addFailure,"addFailure(Test, Throwable)",994,1000,1,0,0,0,0,2,0,2,9,0.9761904761904762,7
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,JUnitTestRunner,endTest,endTest(Test),488,491,0,0,0,0,0,2,1,1,8,0.9666666666666668,4
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,JUnitTestRunner,endTest,endTest(Test),803,804,0,0,0,0,0,0,0,1,4,0.8888888888888888,2
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,JUnitTestRunner,endTest,endTest(Test),1001,1003,0,0,0,0,0,1,0,1,6,0.9375,3
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,JUnitTestRunner,startTest,startTest(Test),477,480,0,0,0,0,0,2,1,1,8,0.9666666666666668,4
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,JUnitTestRunner,startTest,startTest(Test),806,808,0,0,0,0,0,2,0,1,7,0.9444444444444444,3
+JUnitTestRunner.java,org.apache.tools.ant.taskdefs.optional.junit,JUnitTestRunner,JUnitTestRunner,startTest,startTest(Test),1004,1006,0,0,0,0,0,1,0,1,6,0.9375,3
+P4Change.java,org.apache.tools.ant.taskdefs.optional.perforce,P4Change,P4Change,process,process(String),61,75,2,0,0,0,0,6,1,1,10,0.9866666666666668,15
+P4Change.java,org.apache.tools.ant.taskdefs.optional.perforce,P4Change,P4Change,process,process(String),93,111,4,0,0,1,0,9,0,1,14,0.98989898989899,19
+P4Label.java,org.apache.tools.ant.taskdefs.optional.perforce,P4Label,P4Label,process,process(String),119,121,0,0,0,0,0,1,0,1,7,0.9444444444444444,3
+P4Label.java,org.apache.tools.ant.taskdefs.optional.perforce,P4Label,P4Label,process,process(String),129,131,0,0,0,0,0,1,0,1,7,0.9444444444444444,3
+P4Label.java,org.apache.tools.ant.taskdefs.optional.perforce,P4Label,P4Label,process,process(String),150,158,1,0,0,0,0,3,0,1,9,0.9772727272727272,9
+P4Label.java,org.apache.tools.ant.taskdefs.optional.perforce,P4Label,P4Label,process,process(String),167,169,0,0,0,0,0,1,0,1,7,0.9444444444444444,3
+Quantifier.java,org.apache.tools.ant.types,Quantifier,Quantifier,eval,"eval(int, int)",59,59,0,0,0,1,0,0,0,2,6,0.9333333333333332,1
+Quantifier.java,org.apache.tools.ant.types,Quantifier,Quantifier,eval,"eval(int, int)",63,63,0,0,0,1,0,0,0,2,6,0.9333333333333332,1
+Quantifier.java,org.apache.tools.ant.types,Quantifier,Quantifier,eval,"eval(int, int)",67,67,0,0,0,1,0,0,0,2,6,0.9333333333333332,1
+Quantifier.java,org.apache.tools.ant.types,Quantifier,Quantifier,eval,"eval(int, int)",71,71,0,0,0,1,0,0,0,2,6,0.9375,1
+Quantifier.java,org.apache.tools.ant.types,Quantifier,Quantifier,eval,"eval(int, int)",75,75,0,0,0,1,0,0,0,2,6,0.9333333333333332,1
+Resources.java,org.apache.tools.ant.types.resources,Resources,Resources,isFilesystemOnly,isFilesystemOnly(),44,46,0,0,0,1,0,0,0,0,4,0.8571428571428571,3
+Resources.java,org.apache.tools.ant.types.resources,Resources,Resources,isFilesystemOnly,isFilesystemOnly(),158,170,2,1,0,3,0,9,1,0,13,0.98,13
+Resources.java,org.apache.tools.ant.types.resources,Resources,Resources,iterator,iterator(),47,49,0,0,0,1,0,0,0,0,5,0.8888888888888888,3
+Resources.java,org.apache.tools.ant.types.resources,Resources,Resources,iterator,iterator(),134,140,1,0,0,2,0,5,0,0,8,0.9642857142857144,7
+Resources.java,org.apache.tools.ant.types.resources,Resources,Resources,size,size(),50,52,0,0,0,1,0,0,0,0,4,0.8571428571428571,3
+Resources.java,org.apache.tools.ant.types.resources,Resources,Resources,size,size(),146,152,1,0,0,2,0,5,0,0,8,0.9565217391304348,7
+Touch.java,org.apache.tools.ant.taskdefs,Touch,Touch,getFallbackFormat,getFallbackFormat(),77,80,0,0,0,1,0,1,0,0,7,0.9565217391304348,4
+Touch.java,org.apache.tools.ant.taskdefs,Touch,Touch,getFallbackFormat,getFallbackFormat(),164,166,0,0,0,1,0,0,0,0,4,0.875,3
+Touch.java,org.apache.tools.ant.taskdefs,Touch,Touch,getPrimaryFormat,getPrimaryFormat(),73,76,0,0,0,1,0,1,0,0,7,0.9565217391304348,4
+Touch.java,org.apache.tools.ant.taskdefs,Touch,Touch,getPrimaryFormat,getPrimaryFormat(),161,163,0,0,0,1,0,0,0,0,6,0.9166666666666666,3
